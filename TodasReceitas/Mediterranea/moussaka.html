@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moussaka Grega</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="../../IMG/Logo_circular.png" type="image/x-icon" />
+</head>
+
+<body>
+
+  <!-- Cabeçalho padronizado -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="../../IMG/Logo_circular.png" alt="Logo do site de receitas">
+      </a>
+    </div>
+
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="../Home.html">Início</a></li>
+        <li class="dropdown">
+          <a href="#">Receitas ▾</a>
+          <ul class="submenu">
+            <li><a href="../../PaginaCulinarias/Culinaria_Brasileira.html">Culinária Brasileira</a></li>
+            <li><a href="../../PaginaCulinarias/Culinaria_Italiana.html">Culinária Italiana</a></li>
+            <li><a href="../../PaginaCulinarias/Culinaria_Oriental.html">Culinária Oriental</a></li>
+            <li><a href="../../PaginaCulinarias/Culinaria_Mediterranea.html">Culinária Mediterrânea</a></li>
+          </ul>
+        </li>
+        <li><a href="../perfil.html" id="perfilLink" style="display: none;">Meu Perfil</a></li>
+        <li><a href="../Login e CadastroLogin/Login.html" id="loginLink">Entrar</a></li>
+        <li><a href="/api/auth/logout" id="logoutLink" style="display: none;">Sair</a></li>
+      </ul>
+    </nav>
+    <script src="../../Javascript/header.js"></script>
+    <div class="barra-pesquisa">
+      <input type="text" id="buscaReceitas" placeholder="Buscar receitas..." />
+      <button id="botaoBuscar">Buscar</button>
+      <div id="resultadoBusca" class="resultados-busca-container"></div>
+    </div>
+
+
+    <script src="../../Javascript/pesquisa.js"></script>
+  </header>
+
+  <main data-receita-id="moussaka-grega">
+    <article>
+      <figure class="imagem">
+        <img src="../../IMG/Moussaka.jpg" alt="Moussaka grega">
+        <h1>Moussaka Grega</h1>
+      </figure>
+
+      <section class="card-receita">
+        <div class="subcard ingredientes">
+          <h3>Ingredientes</h3>
+          <h4>Para as Berinjelas:</h4>
+          <ul>
+            <li>2 a 3 berinjelas grandes</li>
+            <li>Sal a gosto</li>
+            <li>Azeite para pincelar</li>
+          </ul>
+
+          <h4>Para o Molho de Carne:</h4>
+          <ul>
+            <li>500g de carne moída (de boi ou cordeiro)</li>
+            <li>1 cebola média picada</li>
+            <li>2 dentes de alho picados</li>
+            <li>2 colheres (sopa) de azeite de oliva</li>
+            <li>1 lata (ou 2 xícaras) de tomate pelado picado ou molho de tomate</li>
+            <li>1 colher (sopa) de extrato de tomate</li>
+            <li>1/2 colher (chá) de canela em pó</li>
+            <li>Sal e pimenta-do-reino a gosto</li>
+            <li>Salsinha picada (opcional)</li>
+          </ul>
+
+          <h4>Para o Molho Branco (Bechamel):</h4>
+          <ul>
+            <li>2 colheres (sopa) de manteiga</li>
+            <li>2 colheres (sopa) de farinha de trigo</li>
+            <li>2 xícaras (chá) de leite</li>
+            <li>Noz-moscada a gosto</li>
+            <li>Sal a gosto</li>
+            <li>1/2 xícara (chá) de queijo parmesão ralado</li>
+            <li>1 gema de ovo (opcional, para dar cremosidade)</li>
+          </ul>
+        </div>
+
+        <div class="subcard preparo">
+          <h3>Modo de Preparo</h3>
+          <ol>
+            <li><strong>Prepare as Berinjelas:</strong> Corte as berinjelas em fatias finas no sentido do comprimento.
+              Polvilhe sal e deixe descansar por 30 minutos para retirar o amargor. Enxágue e seque com papel-toalha.
+              Pincele com azeite e grelhe ou asse até ficarem macias e douradas.</li>
+            <li><strong>Faça o Molho de Carne:</strong> Refogue a cebola e o alho no azeite. Adicione a carne moída e
+              cozinhe até dourar. Acrescente o tomate pelado, extrato de tomate, canela, sal e pimenta. Cozinhe até
+              reduzir e ficar encorpado. Finalize com salsinha, se desejar.</li>
+            <li><strong>Prepare o Molho Branco:</strong> Derreta a manteiga, adicione a farinha e mexa por 1 minuto.
+              Adicione o leite aos poucos, mexendo sempre até engrossar. Tempere com sal, noz-moscada e acrescente o
+              parmesão e a gema (opcional).</li>
+            <li><strong>Monte a Moussaka:</strong> Em um refratário, coloque uma camada de berinjela, uma de carne, mais
+              berinjela e por fim o molho branco. Finalize com queijo ralado.</li>
+            <li><strong>Asse:</strong> Leve ao forno preaquecido a 180°C por cerca de 30 a 40 minutos, até dourar.</li>
+            <li><strong>Sirva:</strong> Espere descansar por 10 minutos antes de cortar para firmar melhor.</li>
+          </ol>
+        </div>
+      </section>
+    </article><br><br><br><br><br>
+
+    <section class="convite-cozinhar">
+      <div class="texto-convite">
+        <h2>Compartilhe seu talento culinário</h2>
+        <p>Agora que você viu como é simples, que tal inspirar outras pessoas a se aventurarem na cozinha?</p>
+        <div class="passos-destaque">
+          <div class="passo-destaque">
+            <span>1</span>
+            <p>Registre cada etapa com fotos ou vídeos criativos</p>
+          </div>
+          <div class="passo-destaque">
+            <span>2</span>
+            <p>Use a hashtag <strong>#GiroCulinário</strong> nas redes sociais</p>
+          </div>
+          <div class="passo-destaque">
+            <span>3</span>
+            <p>Inspire outras pessoas a explorar novos sabores</p>
+          </div>
+        </div>
+      </div>
+      <div class="gif-container destaque">
+        <div class="barra-superior"></div>
+        <img src="../../IMG/Moussaka.gif" alt="Preparo da Moussaka grega" class="gif-cozinhar">
+      </div>
+    </section>
+
+    <section class="feedbacks">
+      <div class="caixa-feedback">
+        <div class="avaliacao">
+          <h3>Avalie esta receita</h3>
+          <div class="estrelas-ranking" id="avaliacao-estrelas">
+            <span class="estrela" data-valor="1">☆</span>
+            <span class="estrela" data-valor="2">☆</span>
+            <span class="estrela" data-valor="3">☆</span>
+            <span class="estrela" data-valor="4">☆</span>
+            <span class="estrela" data-valor="5">☆</span>
+          </div>
+        </div>
+
+        <div class="formulario-comentario">
+          <h3>Deixe seu comentário</h3>
+          <form id="form-comentario" class="formulario">
+            <div class="grupo-formulario">
+              <textarea id="comentario-usuario" class="area-texto" placeholder="Conte sua experiência..."></textarea>
+            </div>
+            <div class="grupo-formulario">
+              <label for="imagem-comentario" class="rotulo-imagem">
+                <i class="icone-camera"></i> Adicionar foto
+                <input type="file" id="imagem-comentario" accept="image/*" class="upload-imagem">
+              </label>
+              <div id="preview-imagem" class="preview-imagem"></div>
+            </div>
+            <button type="submit" class="botao-enviar">Publicar Comentário</button>
+          </form>
+        </div>
+
+        <div class="comentarios">
+          <h3>Comentários</h3>
+          <div id="lista-comentarios" class="lista-comentarios"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé padronizado -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Sobre Nós</h3>
+        <p>O Giro Culinário nasceu da paixão por compartilhar receitas deliciosas e acessíveis para todos.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Links Úteis</h3>
+        <ul>
+          <li><a href="../Login e CadastroLogin/termos.html" target="_blank">Termos de Uso</a></li>
+          <li><a href="../Login e CadastroLogin/privacidade.html" target="_blank">Política de Privacidade</a></li>
+          <li><a href="../Login e CadastroLogin/faq.html" target="_blank">Dúvidas Frequentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Redes Sociais</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Giro Culinário. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../../Javascript/script.js"></script>
+  <script src="../../Javascript/main.js"></script>
+  <script src="../../Javascript/receitas.js"></script>
+</body>
+
+</html>

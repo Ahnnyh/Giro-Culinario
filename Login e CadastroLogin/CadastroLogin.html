@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Giro Culinário</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="../IMG/Logo_circular.png" type="image/x-icon" />
+
+</head>
+
+<body class="pagina-login">
+  <!-- Cabeçalho padronizado (igual ao login) -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="../IMG/Logo_circular.png" alt="Logo do site de receitas">
+      </a>
+    </div>
+
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="Home.html">Início</a></li>
+        <li class="dropdown">
+          <a href="#">Receitas ▾</a>
+          <ul class="submenu">
+            <li><a href="../PaginaCulinarias/Culinaria_Brasileira.html">Culinária Italiana</a></li>
+            <li><a href="../PaginaCulinarias/Culinaria_Italiana.html">Culinária Italiana</a></li>
+            <li><a href="../PaginaCulinarias/Culinaria_Oriental.html">Culinária Oriental</a></li>
+            <li><a href="../PaginaCulinarias/Culinaria_Mediterranea.html">Culinária Mediterrânea</a></li>
+          </ul>
+        </li>
+        <li><a href="/login" id="loginLink">Entrar</a></li>
+        <li><a href="/api/auth/logout" id="logoutLink" style="display: none;">Sair</a></li>
+      </ul>
+    </nav>
+    <script src="../Javascript/header.js"></script>
+  </header>
+
+  <main class="container-login">
+    <div class="caixa-login">
+      <div class="cabecalho-login">
+        <h2 class="titulo-login">Crie sua conta</h2>
+        <p class="subtitulo-login">Junte-se à nossa comunidade culinária</p>
+      </div>
+
+      <form id="formCadastro" class="formulario-login">
+        <div class="grupo-campo">
+          <label for="nome" class="rotulo">
+            <i class="fas fa-user icone-input"></i> Nome completo
+          </label>
+          <input type="text" id="nome" class="campo" placeholder="Seu nome completo" required>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="email-cadastro" class="rotulo">
+            <i class="fas fa-envelope icone-input"></i> Email
+          </label>
+          <input type="email" id="email-cadastro" class="campo" placeholder="seu@email.com" required>
+        </div>
+
+        <div class="grupo-campo" style="position: relative;">
+          <label for="senha-cadastro" class="rotulo">
+            <i class="fas fa-lock icone-input"></i> Senha
+          </label>
+          <input type="password" id="senha-cadastro" class="campo" placeholder="Crie uma senha" required>
+          <span class="mostrar-senha" id="toggleSenhaCadastro">
+            <i class="far fa-eye"></i>
+          </span>
+        </div>
+
+        <div class="grupo-campo" style="position: relative;">
+          <label for="confirmar-senha" class="rotulo">
+            <i class="fas fa-lock icone-input"></i> Confirmar senha
+          </label>
+          <input type="password" id="confirmar-senha" class="campo" placeholder="Repita sua senha" required>
+          <span class="mostrar-senha" id="toggleConfirmarSenha">
+            <i class="far fa-eye"></i>
+          </span>
+        </div>
+
+        <div class="grupo-termos">
+          <label class="termos-uso">
+            <input type="checkbox" name="termos" required>
+            <span>
+              Eu concordo com os
+              <a href="../Login e CadastroLogin/termos.html" class="link-termos" target="_blank">Termos de Uso</a> e
+              <a href="../Login e CadastroLogin/privacidade.html" class="link-termos" target="_blank">Política de
+                Privacidade</a>
+            </span>
+          </label>
+        </div>
+
+        <button type="submit" class="botao-login">
+          <i class="fas fa-user-plus"></i> Criar conta
+        </button>
+
+        <div class="divisor"><span>ou</span></div>
+
+        <p class="texto-cadastro">
+          Já tem uma conta?
+          <a href="../Login e CadastroLogin/Login.html" class="link-cadastro">Faça login</a>
+        </p>
+      </form>
+    </div>
+  </main>
+
+
+  <!-- Rodapé padronizado (igual ao login) -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Sobre Nós</h3>
+        <p>O Giro Culinário nasceu da paixão por compartilhar receitas deliciosas e acessíveis para todos.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Links Úteis</h3>
+        <ul>
+          <li><a href="../Login e CadastroLogin/termos.html" target="_blank">Termos de Uso</a></li>
+          <li><a href="../Login e CadastroLogin/privacidade.html" target="_blank">Política de Privacidade</a></li>
+          <li><a href="../Login e CadastroLogin/faq.html" target="_blank">Dúvidas Frequentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Redes Sociais</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Giro Culinário. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+
+  <script src="../Javascript/main.js"></script>
+  <script src="../Javascript/cadastro.js"></script>
+  <script src="../Javascript/header.js"></script>
+</body>
+
+</html>

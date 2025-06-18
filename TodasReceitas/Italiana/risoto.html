@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Risoto de Cogumelosl</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="../../IMG/Logo_circular.png" type="image/x-icon" />
+</head>
+
+<body>
+
+  <!-- Cabeçalho padronizado -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="../../IMG/Logo_circular.png" alt="Logo do site de receitas">
+      </a>
+    </div>
+
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="../Home.html">Início</a></li>
+        <li class="dropdown">
+          <a href="#">Receitas ▾</a>
+          <ul class="submenu">
+            <li><a href="../../PaginaCulinarias/Culinaria_Brasileira.html">Culinária Brasileira</a></li>
+            <li><a href="../../PaginaCulinarias/Culinaria_Italiana.html">Culinária Italiana</a></li>
+            <li><a href="../../PaginaCulinarias/Culinaria_Oriental.html">Culinária Oriental</a></li>
+            <li><a href="../../PaginaCulinarias/Culinaria_Mediterranea.html">Culinária Mediterrânea</a></li>
+          </ul>
+        </li>
+        <li><a href="../perfil.html" id="perfilLink" style="display: none;">Meu Perfil</a></li>
+        <li><a href="../Login e CadastroLogin/Login.html" id="loginLink">Entrar</a></li>
+        <li><a href="/api/auth/logout" id="logoutLink" style="display: none;">Sair</a></li>
+      </ul>
+    </nav>
+    <script src="../../Javascript/header.js"></script>
+    <div class="barra-pesquisa">
+      <input type="text" id="buscaReceitas" placeholder="Buscar receitas..." />
+      <button id="botaoBuscar">Buscar</button>
+      <div id="resultadoBusca" class="resultados-busca-container"></div>
+    </div>
+
+
+    <script src="../../Javascript/pesquisa.js"></script>
+  </header>
+
+  <main data-receita-id="risoto-cogumelos">
+    <article>
+      <figure class="imagem">
+        <img src="../../IMG/Risoto.jpg" alt="Risoto de Cogumelos">
+        <h1>Risoto de Cogumelos</h1>
+      </figure>
+
+      <section class="card-receita">
+        <div class="subcard ingredientes">
+          <h3>Ingredientes</h3>
+          <ul>
+            <li>1 e 1/2 xícara de arroz arbório</li>
+            <li>200g de cogumelos frescos (shiitake, paris, shimeji ou misto)</li>
+            <li>1/2 cebola picada</li>
+            <li>2 colheres (sopa) de manteiga</li>
+            <li>2 colheres (sopa) de azeite de oliva</li>
+            <li>1/2 xícara de vinho branco seco</li>
+            <li>1 litro de caldo de legumes quente (ou de frango)</li>
+            <li>1/2 xícara de queijo parmesão ralado</li>
+            <li>Sal e pimenta-do-reino a gosto</li>
+            <li>(Opcional) Salsinha picada para finalizar</li>
+          </ul>
+        </div>
+
+        <div class="subcard preparo">
+          <h3>Modo de Preparo</h3>
+          <ol>
+            <li><strong>Aqueça o caldo:</strong> Mantenha o caldo de legumes quente em fogo baixo.</li>
+            <li><strong>Refogue os cogumelos:</strong> Em uma frigideira, aqueça 1 colher de manteiga com um fio de
+              azeite. Refogue os cogumelos por 3–5 minutos até dourarem. Reserve.</li>
+            <li><strong>Refogue a cebola:</strong> Em uma panela grande, aqueça o restante da manteiga com azeite.
+              Refogue a cebola até ficar translúcida (sem dourar).</li>
+            <li><strong>Adicione o arroz:</strong> Junte o arroz arbório e refogue por 1–2 minutos, mexendo, até que os
+              grãos fiquem levemente transparentes nas bordas.</li>
+            <li><strong>Deglace com vinho:</strong> Adicione o vinho branco e mexa até evaporar completamente.</li>
+            <li><strong>Cozinhe com o caldo:</strong> Vá adicionando o caldo quente aos poucos (1 concha de cada vez),
+              mexendo sempre. Espere o líquido quase secar antes de adicionar a próxima concha. Esse processo leva cerca
+              de 18 a 20 minutos.</li>
+            <li><strong>Incorpore os cogumelos:</strong> Quando o arroz estiver al dente e cremoso, junte os cogumelos
+              refogados e misture bem.</li>
+            <li><strong>Finalize:</strong> Desligue o fogo, acrescente o parmesão ralado e, se quiser, uma colher de
+              manteiga extra. Mexa até ficar bem cremoso. Acerte o sal e pimenta.</li>
+            <li><strong>Sirva imediatamente:</strong> Polvilhado com salsinha fresca, se desejar.</li>
+          </ol>
+        </div>
+      </section>
+    </article><br><br><br><br><br>
+
+    <section class="convite-cozinhar">
+      <div class="texto-convite">
+        <h2>Compartilhe seu talento culinário</h2>
+        <p>Agora que você viu como é simples, que tal inspirar outras pessoas a se aventurarem na cozinha?</p>
+        <div class="passos-destaque">
+          <div class="passo-destaque">
+            <span>1</span>
+            <p>Registre cada etapa com fotos ou vídeos criativos</p>
+          </div>
+          <div class="passo-destaque">
+            <span>2</span>
+            <p>Use a hashtag <strong>#GiroCulinário</strong> nas redes sociais</p>
+          </div>
+          <div class="passo-destaque">
+            <span>3</span>
+            <p>Inspire outras pessoas a explorar novos sabores</p>
+          </div>
+        </div>
+      </div>
+      <div class="gif-container destaque">
+        <div class="barra-superior"></div>
+        <img src="../../IMG/gif-risoto.gif" alt="Preparo do risoto" class="gif-cozinhar">
+      </div>
+    </section>
+
+    <section class="feedbacks">
+      <div class="caixa-feedback">
+        <div class="avaliacao">
+          <h3>Avalie esta receita</h3>
+          <div class="estrelas-ranking" id="avaliacao-estrelas">
+            <span class="estrela" data-valor="1">☆</span>
+            <span class="estrela" data-valor="2">☆</span>
+            <span class="estrela" data-valor="3">☆</span>
+            <span class="estrela" data-valor="4">☆</span>
+            <span class="estrela" data-valor="5">☆</span>
+          </div>
+        </div>
+
+        <div class="formulario-comentario">
+          <h3>Deixe seu comentário</h3>
+          <form id="form-comentario" class="formulario">
+            <div class="grupo-formulario">
+              <textarea id="comentario-usuario" class="area-texto" placeholder="Conte sua experiência..."></textarea>
+            </div>
+            <div class="grupo-formulario">
+              <label for="imagem-comentario" class="rotulo-imagem">
+                <i class="icone-camera"></i> Adicionar foto
+                <input type="file" id="imagem-comentario" accept="image/*" class="upload-imagem">
+              </label>
+              <div id="preview-imagem" class="preview-imagem"></div>
+            </div>
+            <button type="submit" class="botao-enviar">Publicar Comentário</button>
+          </form>
+        </div>
+
+        <div class="comentarios">
+          <h3>Comentários</h3>
+          <div id="lista-comentarios" class="lista-comentarios"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé padronizado -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Sobre Nós</h3>
+        <p>O Giro Culinário nasceu da paixão por compartilhar receitas deliciosas e acessíveis para todos.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Links Úteis</h3>
+        <ul>
+          <li><a href="../Login e CadastroLogin/termos.html" target="_blank">Termos de Uso</a></li>
+          <li><a href="../Login e CadastroLogin/privacidade.html" target="_blank">Política de Privacidade</a></li>
+          <li><a href="../Login e CadastroLogin/faq.html" target="_blank">Dúvidas Frequentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Redes Sociais</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Giro Culinário. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../../Javascript/script.js"></script>
+  <script src="../../Javascript/main.js"></script>
+  <script src="../../Javascript/receitas.js"></script>
+</body>
+
+</html>

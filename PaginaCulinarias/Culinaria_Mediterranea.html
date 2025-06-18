@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinária Mediterrânea | Giro Culinário</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../IMG/Logo_circular.png" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Cabeçalho padronizado -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../../IMG/Logo_circular.png" alt="Logo do site de receitas">
+            </a>
+        </div>
+
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="../TodasReceitas/Home.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="#">Receitas ▾</a>
+                    <ul class="submenu">
+                        <li><a href="../../PaginaCulinarias/Culinaria_Brasileira.html">Culinária Brasileira</a></li>
+                        <li><a href="../../PaginaCulinarias/Culinaria_Italiana.html">Culinária Italiana</a></li>
+                        <li><a href="../../PaginaCulinarias/Culinaria_Oriental.html">Culinária Oriental</a></li>
+                        <li><a href="../../PaginaCulinarias/Culinaria_Mediterranea.html">Culinária Mediterrânea</a></li>
+                    </ul>
+                </li>
+                <li><a href="../TodasReceitas/perfil.html" id="perfilLink" style="display: none;">Meu Perfil</a></li>
+                <li><a href="../Login e CadastroLogin/Login.html" id="loginLink">Entrar</a></li>
+                <li><a href="/api/auth/logout" id="logoutLink" style="display: none;">Sair</a></li>
+            </ul>
+        </nav>
+        <script src="../../Javascript/header.js"></script>
+        <div class="barra-pesquisa">
+            <input type="text" id="buscaReceitas" placeholder="Buscar receitas..." />
+            <button id="botaoBuscar">Buscar</button>
+            <div id="resultadoBusca" class="resultados-busca-container"></div>
+        </div>
+
+
+        <script src="../../Javascript/pesquisa.js"></script>
+    </header>
+
+    <main>
+        <!-- Banner da Categoria -->
+        <section class="categoria-banner"
+            style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../IMG/Mediterranea.png');">
+            <div class="banner-content">
+                <h1>Culinária Mediterrânea</h1>
+                <p>Sabores frescos e saudáveis do Mediterrâneo</p>
+            </div>
+        </section>
+
+        <!-- Filtros -->
+        <section class="filtros-container">
+            <div class="filtros-content">
+                <div class="filtro">
+                    <label for="tipo">Tipo:</label>
+                    <select id="tipo">
+                        <option value="todos">Todos</option>
+                        <option value="entradas">Entradas</option>
+                        <option value="pratos-principais">Pratos Principais</option>
+                        <option value="sobremesas">Sobremesas</option>
+                    </select>
+                </div>
+                <div class="filtro">
+                    <span class="favoritar-btn"><i class="far fa-heart"></i></span>
+                </div>
+                <div class="filtro">
+                    <label for="tempo">Tempo:</label>
+                    <select id="tempo">
+                        <option value="todos">Todos</option>
+                        <option value="rapido">Rápido (&lt;30min)</option>
+                        <option value="medio">Médio (30-60min)</option>
+                        <option value="demorado">Demorado (&gt;60min)</option>
+                    </select>
+                </div>
+                <button class="btn-primary" id="aplicar-filtros">Aplicar Filtros</button>
+            </div>
+        </section>
+
+        <!-- Todas as receitas da categoria -->
+        <section class="receitas-categoria">
+            <div class="receitas-header">
+                <h2>Receitas Mediterrâneas</h2>
+            </div>
+
+            <div class="receitas-grid">
+                <!-- Receita 1 -->
+                <article class="receita-card" data-id="falafel-assado">
+                    <div class="receita-imagem" style="background-image: url('../IMG/Falafel.jpg');">
+                        <span class="favoritar-btn"><i class="far fa-heart"></i></span>
+                    </div>
+                    <div class="receita-info">
+                        <h3>Falafel Assado</h3>
+                        <div class="meta-info">
+                            <span><i class="far fa-clock"></i> 30min</span>
+                            <span><i class="fas fa-utensils"></i> 4 porções</span>
+                        </div>
+                        <a href="../TodasReceitas/Mediterranea/falafel.html" class="btn-secondary">Ver Receita</a>
+                    </div>
+                </article>
+
+                <!-- Receita 2 -->
+                <article class="receita-card" data-id="hummus-com-pao-pita">
+                    <div class="receita-imagem" style="background-image: url('../IMG/Hummus\ com\ pão\ pita.jpg');">
+                        <span class="favoritar-btn"><i class="far fa-heart"></i></span>
+                    </div>
+                    <div class="receita-info">
+                        <h3>Hummus com Pão Pita</h3>
+                        <div class="meta-info">
+                            <span><i class="far fa-clock"></i> 20min</span>
+                            <span><i class="fas fa-utensils"></i> 6 porções</span>
+                        </div>
+                        <a href="../TodasReceitas/Mediterranea/hummus.html" class="btn-secondary">Ver Receita</a>
+                    </div>
+                </article>
+
+                <!-- Receita 3 -->
+                <article class="receita-card" data-id="tabule-libanes">
+                    <div class="receita-imagem" style="background-image: url('../IMG/Tabule.jpg');">
+                        <span class="favoritar-btn"><i class="far fa-heart"></i></span>
+                    </div>
+                    <div class="receita-info">
+                        <h3>Tabule libanês</h3>
+                        <div class="meta-info">
+                            <span><i class="far fa-clock"></i> 25min</span>
+                            <span><i class="fas fa-utensils"></i> 4 porções</span>
+                        </div>
+                        <a href="../TodasReceitas/Mediterranea/tabule.html" class="btn-secondary">Ver Receita</a>
+                    </div>
+                </article>
+
+                <!-- Receita 4 -->
+                <article class="receita-card" data-id="moussaka-grega">
+                    <div class="receita-imagem" style="background-image: url('../IMG/Moussaka.jpg');">
+                        <span class="favoritar-btn"><i class="far fa-heart"></i></span>
+                    </div>
+                    <div class="receita-info">
+                        <h3>Moussaka Grega</h3>
+                        <div class="meta-info">
+                            <span><i class="far fa-clock"></i> 1h 30min</span>
+                            <span><i class="fas fa-utensils"></i> 6 porções</span>
+                        </div>
+                        <a href="../TodasReceitas/Mediterranea/moussaka.html" class="btn-secondary">Ver Receita</a>
+                    </div>
+                </article>
+
+                <!-- Receita 5 -->
+                <article class="receita-card" data-id="frango-grelhado">
+                    <div class="receita-imagem" style="background-image: url('../IMG/Frango\ grelhado.jpg');">
+                        <span class="favoritar-btn"><i class="far fa-heart"></i></span>
+                    </div>
+                    <div class="receita-info">
+                        <h3>Frango grelhado com ervas e limão</h3>
+                        <div class="meta-info">
+                            <span><i class="far fa-clock"></i> 1h</span>
+                            <span><i class="fas fa-utensils"></i> 4 porções</span>
+                        </div>
+                        <a href="../TodasReceitas/Mediterranea/frango_grelhado.html" class="btn-secondary">Ver
+                            Receita</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Paginação -->
+            <div class="paginacao">
+                <a href="#" class="pagina-atual">1</a>
+                <a href="#">2</a>
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>O Giro Culinário nasceu da paixão por compartilhar receitas deliciosas e acessíveis para todos.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="../Login e CadastroLogin/termos.html" target="_blank">Termos de Uso</a></li>
+                    <li><a href="../Login e CadastroLogin/privacidade.html" target="_blank">Política de Privacidade</a>
+                    </li>
+                    <li><a href="../Login e CadastroLogin/faq.html" target="_blank">Dúvidas Frequentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Giro Culinário. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../Javascript/script.js"></script>
+    <script src="../Javascript/main.js"></script>
+    <script src="../Javascript/receitas.js"></script>
+</body>
+
+</html>

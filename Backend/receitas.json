@@ -1,0 +1,162 @@
+[
+  {
+    "id": "brigadeiro-tradicional",
+    "nome": "Brigadeiro Tradicional",
+    "imagem": "../IMG/Brigadeiro.jpg",
+    "tempo": "10 min",
+    "porcoes": "15 unidades",
+    "link": "../TodasReceitas/Brasileira/brigadeiro.html"
+  },
+  {
+    "id": "escondidinho-carne-seca",
+    "nome": "Escondidinho de Carne Seca",
+    "imagem": "../IMG/Escondidinho.jpg",
+    "tempo": "1h",
+    "porcoes": "6 porções",
+    "link": "../TodasReceitas/Brasileira/escondidinho.html"
+  },
+  {
+    "id": "feijoada",
+    "nome": "Feijoada",
+    "imagem": "../IMG/Feijoada.jpg",
+    "tempo": "2h",
+    "porcoes": "8 porções",
+    "link": "../TodasReceitas/Brasileira/feijoada.html"
+  },
+  {
+    "id": "moqueca-peixe",
+    "nome": "Moqueca de Peixe",
+    "imagem": "../IMG/Moqueca.jpg",
+    "tempo": "45 min",
+    "porcoes": "4 porções",
+    "link": "../TodasReceitas/Brasileira/moqueca.html"
+  },
+  {
+    "id": "pao-de-queijo",
+    "nome": "Pão de Queijo Mineiro",
+    "imagem": "../IMG/Pão de Queijo.jpg",
+    "tempo": "25 min",
+    "porcoes": "20 unidades",
+    "link": "../TodasReceitas/Brasileira/pao_de_queijo.html"
+  },
+  {
+    "id": "lasanha-bolonhesa",
+    "nome": "Lasanha à Bolonhesa",
+    "imagem": "../IMG/Lasanha.jpg",
+    "tempo": "1h",
+    "porcoes": "6 porções",
+    "link": "../TodasReceitas/Italiana/lasanha.html"
+  },
+  {
+    "id": "pizza-margherita",
+    "nome": "Pizza Margherita Artesanal",
+    "imagem": "../IMG/Pizza.jpg",
+    "tempo": "1h30",
+    "porcoes": "2 pizzas",
+    "link": "../TodasReceitas/Italiana/pizza.html"
+  },
+  {
+    "id": "risoto-cogumelos",
+    "nome": "Risoto de Cogumelos",
+    "imagem": "../IMG/Risoto.jpg",
+    "tempo": "40 min",
+    "porcoes": "4 porções",
+    "link": "../TodasReceitas/Italiana/risoto.html"
+  },
+  {
+    "id": "tiramisu",
+    "nome": "Tiramisù",
+    "imagem": "../IMG/Tiramisu.jpg",
+    "tempo": "3h (com geladeira)",
+    "porcoes": "6 porções",
+    "link": "../TodasReceitas/Italiana/tiramisu.html"
+  },
+  {
+    "id": "arancini-de-queijo",
+    "nome": "Arancini de Queijo",
+    "imagem": "../IMG/Arancini.jpg",
+    "tempo": "1h15",
+    "porcoes": "20 unidades",
+    "link": "../TodasReceitas/Italiana/arancini.html"
+  },
+  {
+    "id": "falafel-assado",
+    "nome": "Falafel Assado",
+    "imagem": "../IMG/Falafel.jpg",
+    "tempo": "1h",
+    "porcoes": "4 porções",
+    "link": "../TodasReceitas/Mediterranea/falafel.html"
+  },
+  {
+    "id": "frango-grelhado",
+    "nome": "Frango Grelhado com Ervas e Limão",
+    "imagem": "../IMG/Frango grelhado.jpg",
+    "tempo": "30 min",
+    "porcoes": "4 porções",
+    "link": "../TodasReceitas/Mediterranea/frango_grelhado.html"
+  },
+  {
+    "id": "hummus-com-pao-pita",
+    "nome": "Hummus com Pão Pita",
+    "imagem": "../IMG/Hummus com pão pita.jpg",
+    "tempo": "20 min",
+    "porcoes": "4 porções",
+    "link": "../TodasReceitas/Mediterranea/hummus.html"
+  },
+  {
+    "id": "moussaka-grega",
+    "nome": "Moussaka Grega",
+    "imagem": "../IMG/Moussaka.jpg",
+    "tempo": "1h20",
+    "porcoes": "6 porções",
+    "link": "../TodasReceitas/Mediterranea/moussaka.html"
+  },
+  {
+    "id": "tabule-libanes",
+    "nome": "Tabule Libanês",
+    "imagem": "../IMG/Tabule.jpg",
+    "tempo": "30 min",
+    "porcoes": "4 porções",
+    "link": "../TodasReceitas/Mediterranea/tabule.html"
+  },
+  {
+    "id": "frango-xadrez",
+    "nome": "Frango Xadrez",
+    "imagem": "../IMG/Frango_Xadrez.jpg",
+    "tempo": "35 min",
+    "porcoes": "4 porções",
+    "link": "../TodasReceitas/Oriental/frango_xadrez.html"
+  },
+  {
+    "id": "gyoza",
+    "nome": "Gyoza (Pastelzinho Japonês)",
+    "imagem": "../IMG/Gyoza.png",
+    "tempo": "1h",
+    "porcoes": "30 unidades",
+    "link": "../TodasReceitas/Oriental/gyoza.html"
+  },
+  {
+    "id": "pad-thai-tradicional",
+    "nome": "Pad Thai Tradicional",
+    "imagem": "../IMG/pad-thai.jpg",
+    "tempo": "40 min",
+    "porcoes": "4 porções",
+    "link": "../TodasReceitas/Oriental/padthai.html"
+  },
+  {
+    "id": "sushi-salmao",
+    "nome": "Sushi de Salmão",
+    "imagem": "../IMG/SushiSalmao.jpg",
+    "tempo": "1h",
+    "porcoes": "20 unidades",
+    "link": "../TodasReceitas/Oriental/sushi.html"
+  },
+  {
+    "id": "yakissoba",
+    "nome": "Yakissoba de Legumes",
+    "imagem": "../IMG/Yakissoba.png",
+    "tempo": "45 min",
+    "porcoes": "4 porções",
+    "link": "../TodasReceitas/Oriental/yakissoba.html"
+  }
+]
