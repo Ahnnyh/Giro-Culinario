@@ -9,7 +9,7 @@ Ele une **frontend moderno** com **backend robusto**, oferecendo funcionalidades
 - **Favoritar receitas** e visualizar no perfil  
 - **Comentar e avaliar receitas** em tempo real  
 - **Busca dinâmica** por nome ou categoria  
-- 🗄**Banco relacional** com CRUD de usuários, comentários e favoritos  
+- **Banco relacional** com CRUD de usuários, comentários e favoritos  
 
 Projeto ideal para estudos e prática em **desenvolvimento web fullstack**, integrando APIs REST, banco de dados e manipulação de DOM.
 
@@ -28,7 +28,7 @@ Na raiz do projeto (onde está o package.json):
 
 npm install
 
-📦 Principais dependências
+### Principais dependências
 
 express → servidor backend
 
@@ -115,6 +115,7 @@ Integração frontend ↔ backend via API REST
 **Segurança:** bcryptjs, express-session
 
 **Comunicação:** APIs REST
+
 
 
 
