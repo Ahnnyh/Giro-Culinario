@@ -1,7 +1,6 @@
 # 🍴 Giro Culinário
 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-orange)  
-![Tech](https://img.shields.io/badge/stack-Node.js%20%7C%20Express%20%7C%20SQLite%20%7C%20Sequelize%20%7C%20HTML%20%7C%20CSS%20%7C%20JS-blue)  
+
 
 O **Giro Culinário** é um projeto web criado para **explorar e compartilhar receitas de diversas culinárias do mundo**.  
 Ele une **frontend moderno** com **backend robusto**, oferecendo funcionalidades completas como:  
@@ -116,5 +115,6 @@ Integração frontend ↔ backend via API REST
 **Segurança:** bcryptjs, express-session
 
 **Comunicação:** APIs REST
+
 
 
