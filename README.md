@@ -61,6 +61,7 @@ no navegador.
 (O frontend se conecta ao backend via fetch API).
 
 ### 📂 Estrutura do Projeto
+
 Giro Culinario/
 ├── Backend-receitas/         # Servidor, banco e rotas da API
 │   ├── controllers/          # Lógica (login, comentários, favoritos)
@@ -115,6 +116,7 @@ Integração frontend ↔ backend via API REST
 **Segurança:** bcryptjs, express-session
 
 **Comunicação:** APIs REST
+
 
 
 
