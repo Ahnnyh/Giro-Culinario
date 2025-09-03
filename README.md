@@ -22,11 +22,15 @@ Projeto ideal para estudos e prática em **desenvolvimento web fullstack**, inte
 git clone https://github.com/Ahnnyh/Giro-Culinario
 cd giro-culinario 
 
+
+
 ### 2. Instalar dependências
 
 Na raiz do projeto (onde está o package.json):
 
 npm install
+
+
 
 ### Principais dependências
 
@@ -42,13 +46,15 @@ cors → comunicação frontend ↔ backend
 
 express-session → gerenciamento de sessão
 
+
 ### 3. Rodar o backend
 cd Backend-receitas
 node server.js
 
-
 Servidor disponível em:
 👉 http://localhost:3000
+
+
 
 ### 4. Rodar o frontend
 
@@ -60,30 +66,7 @@ TodasReceitas/Home.html
 no navegador.
 (O frontend se conecta ao backend via fetch API).
 
-### 📂 Estrutura do Projeto
 
-Giro Culinario/
-├── Backend-receitas/         # Servidor, banco e rotas da API
-│   ├── controllers/          # Lógica (login, comentários, favoritos)
-│   ├── models/               # Sequelize models (User, Comentario, Favorito)
-│   ├── routes/               # Rotas da API REST
-│   ├── server.js             # Inicializa o servidor
-│   └── database.sqlite       # Banco de dados local
-│
-├── css/                      # Estilos (style.css)
-├── IMG/                      # Imagens do site
-├── Javascript/               # Scripts JS do frontend
-│   ├── header.js             # Menu login/logout
-│   ├── main.js               # Menu mobile
-│   ├── pesquisa.js           # Busca dinâmica
-│   ├── receitas.js           # Lógica de receitas
-│   ├── script.js             # Comentários e avaliações
-│   └── video.js              # Banner de vídeo
-│
-├── Login e CadastroLogin/    # Telas de login, cadastro, termos
-├── TodasReceitas/            # Páginas HTML de receitas e perfil
-├── PaginaCulinarias/         # Páginas de categorias por culinária
-├── package.json              # Dependências do Node.js
 
 ### Funcionalidades
 
@@ -99,6 +82,8 @@ Layout responsivo com grid, flexbox e media queries
 
 Integração frontend ↔ backend via API REST
 
+
+
 ### Layout
 
  **Home Page:** banner em vídeo, categorias e receitas em destaque
@@ -106,6 +91,8 @@ Integração frontend ↔ backend via API REST
  **Perfil:** dados do usuário, favoritos e comentários
 
  **Receitas:** ingredientes, preparo, comentários e avaliações
+
+
 
  ### Tecnologias Utilizadas
 
@@ -116,6 +103,7 @@ Integração frontend ↔ backend via API REST
 **Segurança:** bcryptjs, express-session
 
 **Comunicação:** APIs REST
+
 
 
 
