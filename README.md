@@ -17,14 +17,7 @@ Projeto ideal para estudos e prática em **desenvolvimento web fullstack**, inte
 
 ## Como rodar o projeto
 
-### 1. Clonar o repositório
-
-git clone https://github.com/Ahnnyh/Giro-Culinario
-cd giro-culinario 
-
-
-
-### 2. Instalar dependências
+### 1. Instalar dependências
 
 Na raiz do projeto (onde está o package.json):
 
@@ -47,7 +40,7 @@ cors → comunicação frontend ↔ backend
 express-session → gerenciamento de sessão
 
 
-### 3. Rodar o backend
+### 2. Rodar o backend
 cd Backend-receitas
 node server.js
 
@@ -56,7 +49,7 @@ Servidor disponível em:
 
 
 
-### 4. Rodar o frontend
+### 3. Rodar o frontend
 
 Basta abrir o arquivo:
 
