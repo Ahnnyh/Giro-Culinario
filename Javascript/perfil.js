@@ -23,67 +23,30 @@ try {
     // Ordenar por mais recente
     favoritos.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
-    console.log('📦 Carregando receitas.json...');
-    const resReceitas = await fetch('/receitas.json'); // 🔁 Corrija o caminho se necessário
+    console.log('📦 Carregando dados das receitas...');
+    const resReceitas = await fetch('/api/receitas');
     const receitasInfo = await resReceitas.json();
-    console.log('✅ Receitas carregadas:', receitasInfo);
 
     favoritos.forEach(data => {
       const receita = receitasInfo.find(r => r.id === data.receitaId);
       if (!receita) {
-        console.warn(`⚠️ Receita com ID "${data.receitaId}" não encontrada no JSON`);
+        console.warn(`⚠️ Receita com ID "${data.receitaId}" não encontrada`);
         return;
       }
 
-      console.log(`🧩 Renderizando favorito:`, receita);
+      const card = criarCardReceita(receita);
+      listaFavoritos.appendChild(card);
 
-     const card = document.createElement('article');
-card.className = 'receita-card';
-card.setAttribute('data-id', receita.id);
-card.innerHTML = `
-  <div class="receita-imagem" style="background-image: url('${receita.imagem}');">
-    <span class="favoritar-btn"><i class="fas fa-heart"></i></span>
-  </div>
-  <div class="receita-info">
-    <h3>${receita.nome}</h3>
-    <div class="meta-info">
-      <span><i class="far fa-clock"></i> ${receita.tempo}</span>
-      <span><i class="fas fa-utensils"></i> ${receita.porcoes}</span>
-    </div>
-    <a href="${receita.link}" class="btn-secondary">Ver Receita</a>
-  </div>
-`;
-listaFavoritos.appendChild(card);
-
-// Adiciona funcionalidade de desfavoritar
-const btn = card.querySelector('.favoritar-btn');
-btn.classList.add('favoritado'); // deixa visualmente preenchido
-
-btn.addEventListener('click', async function (e) {
-  e.stopPropagation();
-  const receitaId = receita.id;
-
-  try {
-    const res = await fetch(`/api/favoritos/${receitaId}`, {
-      method: 'DELETE',
+      // No perfil, o coração já começa preenchido (é uma lista só de favoritos)
+      card.querySelector('.favoritar-btn').classList.add('favoritado');
+      card.querySelector('.favoritar-btn').innerHTML = '<i class="fas fa-heart"></i>';
     });
-    const data = await res.json();
 
-    if (data.success) {
-      card.remove(); // remove da lista de favoritos
+    ativarBotoesFavoritar(listaFavoritos, (card) => {
+      card.remove();
       if (listaFavoritos.children.length === 0) {
         nenhumFavorito.style.display = 'block';
       }
-    } else {
-      alert('Erro ao remover dos favoritos.');
-    }
-  } catch (err) {
-    console.error('Erro ao desfavoritar:', err);
-    alert('Erro ao tentar desfavoritar.');
-  }
-});
-
-
     });
   }
 } catch (err) {

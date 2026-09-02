@@ -1,16 +1,38 @@
 {
   "name": "giro-culinario",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Plataforma full stack para explorar e compartilhar receitas de diversas culinárias do mundo.",
+  "main": "Backend/server.js",
   "scripts": {
+    "start": "node Backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "receitas",
+    "culinaria",
+    "fullstack",
+    "nodejs",
+    "express"
+  ],
+  "author": "Ana Clara Souza Santos",
   "license": "ISC",
-  "description": "",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "connect-session-sequelize": "^7.1.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.7",
     "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "cheerio": "^1.2.0",
+    "imagekit": "^5.2.0"
   }
 }

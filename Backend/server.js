@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
@@ -7,12 +9,20 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const isProduction = process.env.NODE_ENV === 'production';
+
+// Necessário quando a aplicação roda atrás de um proxy (Render, Railway, etc.)
+// para que cookies "secure" funcionem corretamente com HTTPS.
+if (isProduction) {
+  app.set('trust proxy', 1);
+}
 
 // Configuração do banco de dados
 const { sequelize } = require('./config/database');
 
 require('./models/User');
 require('./models/Comentario');
+require('./models/Receita');
 
 // Sessão com Sequelize
 const sessionStore = new SequelizeStore({
@@ -24,12 +34,12 @@ const sessionStore = new SequelizeStore({
 sessionStore.sync();
 
 app.use(session({
-  secret: 'seu_segredo_aqui',
+  secret: process.env.SESSION_SECRET || 'giro-culinario-dev-secret',
   store: sessionStore,
   resave: false,
   saveUninitialized: false,
   cookie: {
-    secure: false,
+    secure: isProduction,
     maxAge: 24 * 60 * 60 * 1000
   }
 }));
@@ -45,11 +55,6 @@ app.use((req, res, next) => {
 // Middlewares padrão
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-// Servir o receitas.json do backend
-app.get('/receitas.json', (req, res) => {
-  res.sendFile(path.join(__dirname, 'receitas.json'));
-});
 
 // Caminhos de arquivos estáticos
 const projectRoot = path.join(__dirname, '..');
@@ -78,48 +83,9 @@ app.get('/home', (req, res) => {
   res.sendFile(path.join(projectRoot, 'TodasReceitas', 'Home.html'));
 });
 
-app.get('/favoritos', (req, res) => {
-  res.sendFile(path.join(projectRoot, 'Favoritos.html'));
-});
-
-// Rota dinâmica para receitas
-app.get('/TodasReceitas/:culinaria/:receita', (req, res) => {
-  const culinaria = req.params.culinaria.replace(/\s+/g, '_').toLowerCase();
-  let receita = req.params.receita.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '_').toLowerCase();
-
-  const filePath = path.join(
-    projectRoot,
-    'TodasReceitas',
-    culinaria,
-    receita + '.html'
-  );
-
-  console.log(`Tentando acessar: ${filePath}`);
-
-  fs.access(filePath, fs.constants.F_OK, (err) => {
-    if (err) {
-      console.error('Erro ao encontrar arquivo:', {
-        culinaria: req.params.culinaria,
-        receita: req.params.receita,
-        pathTentado: filePath,
-        erro: err
-      });
-      return res.status(404).send('Receita não encontrada');
-    }
-
-    res.sendFile(filePath, (err) => {
-      if (err) {
-        console.error('Erro ao enviar arquivo:', err);
-        return res.status(500).send('Erro ao carregar receita');
-      }
-    });
-  });
-});
-
-// API de receitas
-const receitas = require('./receitas.json');
-app.get('/v1/receitas', (req, res) => {
-  res.json(receitas);
+// Rota da página de receita (dinâmica: o conteúdo é buscado da API pelo id na URL)
+app.get('/receita/:id', (req, res) => {
+  res.sendFile(path.join(projectRoot, 'TodasReceitas', 'receita.html'));
 });
 
 // Rotas da aplicação
@@ -127,23 +93,25 @@ const authRoutes = require('./routes/authRoutes');
 const homeRoutes = require('./routes/homeRoutes');
 const ComentarioRoutes = require('./routes/ComentarioRoutes');
 const favoritoRoutes = require('./routes/FavoritoRoutes');
+const receitaRoutes = require('./routes/receitaRoutes');
 
 app.use('/api/auth', authRoutes);
 app.use('/', homeRoutes);
 app.use('/api/comentarios', ComentarioRoutes);
 app.use('/api/favoritos', favoritoRoutes);
+app.use('/api/receitas', receitaRoutes);
 
 // Sincronizar banco e iniciar servidor
 sequelize.sync({ alter: false })
   .then(() => {
     app.listen(PORT, () => {
+      const baseUrl = process.env.BASE_URL || `http://localhost:${PORT}`;
       console.log(`\nServidor rodando na porta ${PORT}`);
       console.log(`Acesse:`);
-      console.log(`- Login: http://localhost:${PORT}/login`);
-      console.log(`- Cadastro: http://localhost:${PORT}/cadastro`);
-      console.log(`- Home: http://localhost:${PORT}`);
-      console.log(`- Favoritos: http://localhost:${PORT}/favoritos`);
-      console.log(`- API Receitas: http://localhost:${PORT}/v1/receitas\n`);
+      console.log(`- Login: ${baseUrl}/login`);
+      console.log(`- Cadastro: ${baseUrl}/cadastro`);
+      console.log(`- Home: ${baseUrl}`);
+      console.log(`- API Receitas: ${baseUrl}/api/receitas\n`);
     });
   })
   .catch(err => {

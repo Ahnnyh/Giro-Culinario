@@ -2,7 +2,7 @@ const todasReceitas = [];
 
 async function carregarReceitas() {
   try {
-    const resposta = await fetch('http://localhost:3000/v1/receitas');
+    const resposta = await fetch('/api/receitas');
     const receitas = await resposta.json();
     todasReceitas.length = 0; // limpa caso já tenha algo
     todasReceitas.push(...receitas);
@@ -13,8 +13,8 @@ async function carregarReceitas() {
 
 function criarResultadoHTML(receita) {
   return `
-    <a href="${receita.link}" class="resultado-item" target="_blank" rel="noopener noreferrer">
-      <div class="resultado-imagem" style="background-image: url('${receita.imagem}')"></div>
+    <a href="/receita/${receita.id}" class="resultado-item" target="_blank" rel="noopener noreferrer">
+      <div class="resultado-imagem" style="background-image: url('${resolverCaminhoMidia(receita.imagem)}')"></div>
       <div class="resultado-info">
         <h4>${receita.nome}</h4>
         <p>${receita.tempo} - ${receita.porcoes}</p>

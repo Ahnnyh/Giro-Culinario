@@ -15,7 +15,7 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="../../IMG/Logo_circular.png" alt="Logo do site de receitas">
+                <img src="../IMG/Logo_circular.png" alt="Logo do site de receitas">
             </a>
         </div>
 
@@ -25,10 +25,10 @@
                 <li class="dropdown">
                     <a href="#">Receitas ▾</a>
                     <ul class="submenu">
-                        <li><a href="../../PaginaCulinarias/Culinaria_Brasileira.html">Culinária Brasileira</a></li>
-                        <li><a href="../../PaginaCulinarias/Culinaria_Italiana.html">Culinária Italiana</a></li>
-                        <li><a href="../../PaginaCulinarias/Culinaria_Oriental.html">Culinária Oriental</a></li>
-                        <li><a href="../../PaginaCulinarias/Culinaria_Mediterranea.html">Culinária Mediterrânea</a></li>
+                        <li><a href="../PaginaCulinarias/Culinaria_Brasileira.html">Culinária Brasileira</a></li>
+                        <li><a href="../PaginaCulinarias/Culinaria_Italiana.html">Culinária Italiana</a></li>
+                        <li><a href="../PaginaCulinarias/Culinaria_Oriental.html">Culinária Oriental</a></li>
+                        <li><a href="../PaginaCulinarias/Culinaria_Mediterranea.html">Culinária Mediterrânea</a></li>
                     </ul>
                 </li>
                 <li><a href="../TodasReceitas/perfil.html" id="perfilLink" style="display: none;">Meu Perfil</a></li>
@@ -36,7 +36,7 @@
                 <li><a href="/api/auth/logout" id="logoutLink" style="display: none;">Sair</a></li>
             </ul>
         </nav>
-        <script src="../../Javascript/header.js"></script>
+        <script src="../Javascript/header.js"></script>
         <div class="barra-pesquisa">
             <input type="text" id="buscaReceitas" placeholder="Buscar receitas..." />
             <button id="botaoBuscar">Buscar</button>
@@ -44,7 +44,7 @@
         </div>
 
 
-        <script src="../../Javascript/pesquisa.js"></script>
+        <script src="../Javascript/pesquisa.js"></script>
     </header>
 
     <main>
@@ -91,83 +91,7 @@
                 <h2>Receitas Mediterrâneas</h2>
             </div>
 
-            <div class="receitas-grid">
-                <!-- Receita 1 -->
-                <article class="receita-card" data-id="falafel-assado">
-                    <div class="receita-imagem" style="background-image: url('../IMG/Falafel.jpg');">
-                        <span class="favoritar-btn"><i class="far fa-heart"></i></span>
-                    </div>
-                    <div class="receita-info">
-                        <h3>Falafel Assado</h3>
-                        <div class="meta-info">
-                            <span><i class="far fa-clock"></i> 30min</span>
-                            <span><i class="fas fa-utensils"></i> 4 porções</span>
-                        </div>
-                        <a href="../TodasReceitas/Mediterranea/falafel.html" class="btn-secondary">Ver Receita</a>
-                    </div>
-                </article>
-
-                <!-- Receita 2 -->
-                <article class="receita-card" data-id="hummus-com-pao-pita">
-                    <div class="receita-imagem" style="background-image: url('../IMG/Hummus\ com\ pão\ pita.jpg');">
-                        <span class="favoritar-btn"><i class="far fa-heart"></i></span>
-                    </div>
-                    <div class="receita-info">
-                        <h3>Hummus com Pão Pita</h3>
-                        <div class="meta-info">
-                            <span><i class="far fa-clock"></i> 20min</span>
-                            <span><i class="fas fa-utensils"></i> 6 porções</span>
-                        </div>
-                        <a href="../TodasReceitas/Mediterranea/hummus.html" class="btn-secondary">Ver Receita</a>
-                    </div>
-                </article>
-
-                <!-- Receita 3 -->
-                <article class="receita-card" data-id="tabule-libanes">
-                    <div class="receita-imagem" style="background-image: url('../IMG/Tabule.jpg');">
-                        <span class="favoritar-btn"><i class="far fa-heart"></i></span>
-                    </div>
-                    <div class="receita-info">
-                        <h3>Tabule libanês</h3>
-                        <div class="meta-info">
-                            <span><i class="far fa-clock"></i> 25min</span>
-                            <span><i class="fas fa-utensils"></i> 4 porções</span>
-                        </div>
-                        <a href="../TodasReceitas/Mediterranea/tabule.html" class="btn-secondary">Ver Receita</a>
-                    </div>
-                </article>
-
-                <!-- Receita 4 -->
-                <article class="receita-card" data-id="moussaka-grega">
-                    <div class="receita-imagem" style="background-image: url('../IMG/Moussaka.jpg');">
-                        <span class="favoritar-btn"><i class="far fa-heart"></i></span>
-                    </div>
-                    <div class="receita-info">
-                        <h3>Moussaka Grega</h3>
-                        <div class="meta-info">
-                            <span><i class="far fa-clock"></i> 1h 30min</span>
-                            <span><i class="fas fa-utensils"></i> 6 porções</span>
-                        </div>
-                        <a href="../TodasReceitas/Mediterranea/moussaka.html" class="btn-secondary">Ver Receita</a>
-                    </div>
-                </article>
-
-                <!-- Receita 5 -->
-                <article class="receita-card" data-id="frango-grelhado">
-                    <div class="receita-imagem" style="background-image: url('../IMG/Frango\ grelhado.jpg');">
-                        <span class="favoritar-btn"><i class="far fa-heart"></i></span>
-                    </div>
-                    <div class="receita-info">
-                        <h3>Frango grelhado com ervas e limão</h3>
-                        <div class="meta-info">
-                            <span><i class="far fa-clock"></i> 1h</span>
-                            <span><i class="fas fa-utensils"></i> 4 porções</span>
-                        </div>
-                        <a href="../TodasReceitas/Mediterranea/frango_grelhado.html" class="btn-secondary">Ver
-                            Receita</a>
-                    </div>
-                </article>
-            </div>
+            <div class="receitas-grid" data-fonte="categoria" data-categoria="Mediterranea"></div>
 
             <!-- Paginação -->
             <div class="paginacao">
@@ -214,6 +138,8 @@
     <script src="../Javascript/script.js"></script>
     <script src="../Javascript/main.js"></script>
     <script src="../Javascript/receitas.js"></script>
+    <script src="../Javascript/receita-card.js"></script>
+    <script src="../Javascript/receitas-lista.js"></script>
 </body>
 
 </html>

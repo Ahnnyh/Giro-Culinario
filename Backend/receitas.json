@@ -34,7 +34,7 @@
   {
     "id": "pao-de-queijo",
     "nome": "Pão de Queijo Mineiro",
-    "imagem": "../IMG/Pão de Queijo.jpg",
+    "imagem": "../IMG/Pão de queijo.jpg",
     "tempo": "25 min",
     "porcoes": "20 unidades",
     "link": "../TodasReceitas/Brasileira/pao_de_queijo.html"
@@ -122,7 +122,7 @@
   {
     "id": "frango-xadrez",
     "nome": "Frango Xadrez",
-    "imagem": "../IMG/Frango_Xadrez.jpg",
+    "imagem": "../IMG/Frango Xadrez.gif",
     "tempo": "35 min",
     "porcoes": "4 porções",
     "link": "../TodasReceitas/Oriental/frango_xadrez.html"
