@@ -1,10 +1,9 @@
 /* ======= INÍCIO style.css ======= */
 /* HEADER MODERNO */
 header {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* centraliza o menu */
   align-items: center;
-  justify-content: space-between;
   gap: 15px;
   padding: 15px 20px;
   background: #4a5546;
@@ -37,6 +36,7 @@ header {
 }
 
 .logo {
+  justify-self: start; /* logo à esquerda */
   display: flex;
   align-items: center;
   flex-shrink: 0;
@@ -52,7 +52,7 @@ header {
 }
 
 .menu-principal {
-  flex: 1;
+  justify-self: center; /* centraliza o menu */
   display: flex;
   justify-content: center;
 }
@@ -116,6 +116,7 @@ header {
 }
 
 .barra-pesquisa {
+  justify-self: end; /* barra à direita */
   display: flex;
   align-items: center;
   gap: 8px;
@@ -248,6 +249,7 @@ header {
 /* ===== MEDIA QUERIES PARA TABLETS E CELULARES ===== */
 @media (max-width: 768px) {
   header {
+    display: flex;
     flex-direction: column;
     align-items: stretch;
     gap: 10px;
@@ -267,11 +269,13 @@ header {
   }
 
   .logo {
+    justify-self: initial;
     order: 1;
     justify-content: center;
   }
 
   .barra-pesquisa {
+    justify-self: initial;
     order: 2;
     width: 100%;
     justify-content: center;
@@ -290,6 +294,7 @@ header {
   }
 
   .menu-principal {
+    justify-self: initial;
     order: 3;
     flex-basis: 100%;
   }
@@ -420,6 +425,82 @@ header {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
+/* ===== IMAGENS DE RECEITA (limitando altura) ===== */
+.imagem {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+  border: 6px solid #a07133;
+}
+
+.imagem img {
+  max-width: 100%;
+  width: 100%;
+  height: 400px; /* altura padrão */
+  object-fit: cover; /* garante que não distorça */
+  display: block;
+  filter: brightness(0.8) contrast(1.1);
+  transition: filter 0.5s ease;
+}
+
+/* Limitar altura máxima em telas grandes */
+@media (min-width: 1200px) {
+  .imagem img {
+    height: 350px; /* reduzida para não ficar enorme */
+  }
+}
+
+/* Mobile: altura menor */
+@media (max-width: 768px) {
+  .imagem img {
+    height: 220px;
+  }
+}
+
+.imagem:hover img {
+  filter: brightness(0.6) contrast(1.2);
+}
+
+.imagem h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 30px 60px;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: screen;
+  transition: all 0.3s ease;
+  border: 2px solid #fff;
+  animation: fadeInTitle 1s ease forwards;
+}
+
+.imagem h1:hover {
+  letter-spacing: 6px;
+}
+
+@keyframes fadeInTitle {
+  from { opacity: 0; transform: translate(-50%, -48%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+@media (max-width: 768px) {
+  .imagem h1 {
+    font-size: 1.5rem;
+    padding: 10px;
+    letter-spacing: 1px;
+    white-space: normal;
+  }
+}
+
+/* ===== BOTÕES E DEMAIS ===== */
 .btn-primary {
   display: inline-block;
   background: #5c3e1b;
@@ -476,7 +557,7 @@ header {
   font-size: 2.5rem;
 }
 
-/* Grades de receitas e categorias */
+/* ===== GRADES DE RECEITAS E CATEGORIAS ===== */
 .receitas-grid,
 .categorias-grid {
   display: grid;
@@ -582,7 +663,7 @@ header {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Media query mobile: duas colunas para cards */
+/* Mobile: duas colunas */
 @media (max-width: 768px) {
   .receitas-grid,
   .categorias-grid {
@@ -634,7 +715,7 @@ header {
   }
 }
 
-/* Newsletter */
+/* ===== NEWSLETTER (corrigido para não cortar) ===== */
 .newsletter {
   background: linear-gradient(135deg, rgba(106, 81, 47, 0.9) 0%, rgba(62, 46, 25, 0.95) 100%);
   padding: 80px 20px;
@@ -645,23 +726,6 @@ header {
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
   border: 1px solid rgba(160, 113, 51, 0.3);
   backdrop-filter: blur(5px);
-}
-
-.newsletter::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  background: 
-    linear-gradient(45deg, 
-      rgba(160, 113, 51, 0.1) 0%, 
-      transparent 50%, 
-      rgba(160, 113, 51, 0.1) 100%),
-    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="rgba(160,113,51,0.2)" stroke-width="0.5" stroke-dasharray="5,5"/></svg>');
-  z-index: -1;
-  border-radius: 20px;
 }
 
 .newsletter-content {
@@ -680,18 +744,6 @@ header {
   display: inline-block;
 }
 
-.newsletter h2::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: #a07133;
-  border-radius: 3px;
-}
-
 .newsletter p {
   color: rgba(248, 241, 229, 0.9);
   font-size: 1.2rem;
@@ -702,46 +754,24 @@ header {
 
 .newsletter-form {
   display: flex;
+  flex-wrap: wrap;
   max-width: 500px;
   margin: 40px auto 0;
-  position: relative;
-  transition: all 0.4s ease;
-}
-
-.newsletter-form:hover {
-  transform: translateY(-3px);
-}
-
-.newsletter-form::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  background: linear-gradient(45deg, #a07133, #5c3e1b, #a07133);
-  background-size: 200% 200%;
-  z-index: -1;
-  border-radius: 50px;
-  opacity: 0.7;
-  animation: gradientShift 4s ease infinite;
-}
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  background: transparent;
+  gap: 10px;
 }
 
 .newsletter-form input {
   flex: 1;
-  padding: 18px 25px;
+  padding: 15px 25px;
   border: none;
   border-radius: 50px;
   font-size: 1rem;
   background: rgba(255,255,255,0.95);
   transition: all 0.3s;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  min-width: 0; /* evita overflow */
+  box-sizing: border-box;
 }
 
 .newsletter-form input:focus {
@@ -751,11 +781,7 @@ header {
 }
 
 .newsletter-form button {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  bottom: 5px;
-  padding: 0 30px;
+  padding: 15px 30px;
   background: linear-gradient(to right, #5c3e1b, #a07133);
   color: white;
   border: none;
@@ -764,9 +790,7 @@ header {
   cursor: pointer;
   transition: all 0.3s;
   box-shadow: 0 4px 10px rgba(92, 62, 27, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  white-space: nowrap;
 }
 
 .newsletter-form button:hover {
@@ -775,16 +799,7 @@ header {
   box-shadow: 0 6px 15px rgba(92, 62, 27, 0.4);
 }
 
-.newsletter-form button::after {
-  content: "→";
-  margin-left: 8px;
-  transition: all 0.3s;
-}
-
-.newsletter-form button:hover::after {
-  transform: translateX(3px);
-}
-
+/* Mobile: formulário em coluna */
 @media (max-width: 768px) {
   .newsletter {
     padding: 60px 20px;
@@ -799,23 +814,16 @@ header {
   }
   .newsletter-form {
     flex-direction: column;
-    background: transparent;
     gap: 15px;
-  }
-  .newsletter-form::before {
-    display: none;
   }
   .newsletter-form input,
   .newsletter-form button {
-    position: static;
     width: 100%;
     border-radius: 50px;
   }
-  .newsletter-form button {
-    padding: 15px;
-  }
 }
 
+/* ===== RODAPÉ ===== */
 footer {
   background: #4a5546;
   color: white;
@@ -897,7 +905,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Seções de ingredientes e preparo */
+/* ===== SEÇÕES DE RECEITA (ingredientes e preparo) ===== */
 section.ingredientes, section.preparo {
   max-width: 800px;
   margin: 40px auto;
@@ -1021,154 +1029,7 @@ section h3::after {
   }
 }
 
-/* Banner de categoria */
-.categoria-banner {
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.banner-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  padding: 20px;
-}
-
-.categoria-banner h1 {
-  font-size: 4rem;
-  color: white;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-}
-
-.categoria-banner p {
-  font-size: 1.5rem;
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-}
-
-.filtros-container {
-  background-color: #f9f5f0;
-  padding: 30px 0;
-  margin-bottom: 40px;
-  border-top: 1px solid #e0d6c9;
-  border-bottom: 1px solid #e0d6c9;
-}
-
-.filtros-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px;
-}
-
-.filtro {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.filtro label {
-  font-weight: 600;
-  color: #5c3e1b;
-}
-
-.filtro select {
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: 1px solid #d0c0a8;
-  background-color: white;
-  color: #5c3e1b;
-  font-size: 1rem;
-  min-width: 150px;
-}
-
-.receitas-categoria {
-  max-width: 1200px;
-  margin: 0 auto 60px;
-  padding: 0 20px;
-}
-
-.receitas-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.receitas-header h2 {
-  font-size: 2.5rem;
-  color: #5c3e1b;
-  margin-bottom: 10px;
-}
-
-.contador-receitas {
-  color: #777;
-  font-size: 1.1rem;
-}
-
-.paginacao {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 50px;
-}
-
-.paginacao a {
-  display: inline-block;
-  padding: 8px 15px;
-  border-radius: 5px;
-  background-color: #f5f5f5;
-  color: #5c3e1b;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-.paginacao a:hover {
-  background-color: #e0d6c9;
-}
-
-.paginacao .pagina-atual {
-  background-color: #5c3e1b;
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .categoria-banner {
-    height: 300px;
-  }
-  .categoria-banner h1 {
-    font-size: 2.5rem;
-  }
-  .categoria-banner p {
-    font-size: 1.2rem;
-  }
-  .filtros-content {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .filtro {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .filtro select {
-    width: 100%;
-  }
-  #aplicar-filtros {
-    width: 100%;
-  }
-}
-
-/* Card de receita completa */
+/* ===== CARD DE RECEITA COMPLETA ===== */
 .receita-container {
   max-width: 1400px;
   margin: 0 auto;
@@ -1188,6 +1049,7 @@ section h3::after {
   width: 90%;
   margin: 60px auto;
   position: relative;
+  box-sizing: border-box;
 }
 
 .card-receita::before {
@@ -1211,6 +1073,7 @@ section h3::after {
   border-bottom: 1px solid #e0d6c9;
   margin: -40px -40px 30px -40px;
   border-radius: 20px 20px 0 0;
+  box-sizing: border-box;
 }
 
 .info-item {
@@ -1230,6 +1093,7 @@ section h3::after {
   grid-template-columns: 1fr 1.5fr;
   gap: 40px;
   padding: 20px 0;
+  box-sizing: border-box;
 }
 
 .subcard {
@@ -1242,6 +1106,9 @@ section h3::after {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.6s ease-out;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
 }
 
 .subcard.show {
@@ -1328,15 +1195,15 @@ section h3::after {
   line-height: 1;
 }
 
-/* Mobile: empilhar ingredientes e preparo */
+/* Mobile: empilhar e garantir que nada sobressaia */
 @media (max-width: 768px) {
   .receita-container {
     padding: 0 15px;
   }
   .card-receita {
-    display: block; /* garante que não use flex */
+    display: block;
     padding: 30px 20px;
-    width: 95%;
+    width: 100%;
     margin: 40px auto;
   }
   .info-receita {
@@ -1346,11 +1213,11 @@ section h3::after {
     margin: -30px -20px 20px -20px;
   }
   .conteudo-receita {
-    grid-template-columns: 1fr; /* uma coluna */
+    grid-template-columns: 1fr;
     gap: 20px;
   }
   .subcard {
-    width: 100%; /* ocupa toda largura */
+    width: 100%;
     padding: 20px;
   }
   .subcard h3 {
@@ -1358,7 +1225,7 @@ section h3::after {
   }
 }
 
-/* Convite cozinhar */
+/* ===== CONVITE COZINHAR ===== */
 .convite-cozinhar {
   display: flex;
   align-items: center;
@@ -1510,7 +1377,7 @@ section h3::after {
   }
 }
 
-/* Feedbacks e comentários */
+/* ===== FEEDBACKS E COMENTÁRIOS ===== */
 .feedbacks {
   max-width: 1200px;
   margin: 60px auto;
@@ -1530,7 +1397,6 @@ section h3::after {
   text-align: center;
 }
 
-/* Estrelas de avaliação - flex para não quebrar */
 .estrelas-ranking {
   display: flex;
   justify-content: center;
@@ -1705,6 +1571,7 @@ section h3::after {
   background: linear-gradient(135deg, #4a5546, #6c7b63);
 }
 
+/* Seção formulário (adicionar receita) - correção de overflow */
 .secao-formulario {
   background: #fdfaf6;
   border: 1px solid rgba(92, 62, 27, 0.2);
@@ -1712,6 +1579,8 @@ section h3::after {
   padding: 30px;
   margin-bottom: 25px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+  overflow: hidden; /* evita que conteúdo interno ultrapasse */
 }
 
 .secao-formulario h3 {
@@ -1722,10 +1591,13 @@ section h3::after {
   align-items: center;
   gap: 10px;
   font-size: 1.2rem;
+  line-height: 1.2; /* garante que ícone não corte */
 }
 
 .secao-formulario h3 i {
   color: #bd8a56;
+  font-size: 1.5rem; /* tamanho adequado */
+  flex-shrink: 0; /* não diminui */
 }
 
 .secao-formulario label strong {
@@ -1919,7 +1791,7 @@ section h3::after {
   }
 }
 
-/* Login e cadastro */
+/* ===== LOGIN E CADASTRO ===== */
 .container-login {
   display: flex;
   justify-content: center;
@@ -1943,6 +1815,7 @@ section h3::after {
   width: 100%;
   max-width: 450px;
   padding: 2.5rem;
+  box-sizing: border-box;
 }
 
 .cabecalho-login {
@@ -2197,7 +2070,7 @@ section h3::after {
   color: #f44336;
 }
 
-/* Perfil */
+/* ===== PERFIL ===== */
 .perfil-body {
   background: linear-gradient(#4f6849cc, #faad64cc);
 }
@@ -2214,6 +2087,7 @@ section h3::after {
     url('https://ik.imagekit.io/alm845a8y/giro-culinario/global.jpg') no-repeat center center / cover;
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
 }
 
 .perfil-pagina-titulo {
@@ -2246,6 +2120,7 @@ section h3::after {
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: box-shadow 0.3s ease;
+  box-sizing: border-box;
 }
 
 .perfil-dados-card:hover {
@@ -2376,7 +2251,7 @@ section h3::after {
   text-align: center;
 }
 
-/* Favoritos */
+/* ===== FAVORITOS ===== */
 .card-favorito {
   background: white;
   border-radius: 10px;
@@ -2404,7 +2279,7 @@ section h3::after {
   text-decoration: none;
 }
 
-/* Comentários extras */
+/* ===== COMENTÁRIOS EXTRAS ===== */
 .btn-excluir {
   background: none;
   border: none;
