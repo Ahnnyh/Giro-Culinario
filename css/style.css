@@ -242,13 +242,13 @@ header.scrolled {
   margin-right: 15px;
 }
 
-/* ===== MEDIA QUERIES PARA O HEADER ===== */
+/* ===== MEDIA QUERIES ===== */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: stretch;
-    gap: 5px;
-    padding: 10px 15px;
+    gap: 10px;
+    padding: 15px;
   }
 
   .logo {
@@ -276,8 +276,7 @@ header.scrolled {
   .menu-principal ul {
     flex-direction: column;
     align-items: center;
-    gap: 2px;
-    padding: 0;
+    gap: 5px;
   }
 
   .menu-principal > ul > li {
@@ -287,7 +286,7 @@ header.scrolled {
 
   .menu-principal > ul > li > a {
     display: block;
-    padding: 8px;
+    padding: 10px;
   }
 
   .dropdown .submenu {
@@ -317,7 +316,88 @@ header.scrolled {
   }
 }
 
-/* ===== HERO SECTION ===== */
+/* ===== DEMAIS ESTILOS (mantidos como estavam, mas com ajustes de responsividade) ===== */
+
+.imagem {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+  border: 6px solid #a07133;
+}
+
+.imagem img {
+  max-width: 100%;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.8) contrast(1.1);
+  transition: filter 0.5s ease;
+}
+
+.imagem:hover img {
+  filter: brightness(0.6) contrast(1.2);
+}
+
+.imagem h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 30px 60px;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: screen;
+  transition: all 0.3s ease;
+  border: 2px solid #fff;
+  animation: fadeInTitle 1s ease forwards;
+}
+
+.imagem h1:hover {
+  letter-spacing: 6px;
+}
+
+@keyframes fadeInTitle {
+  from { opacity: 0; transform: translate(-50%, -48%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+@media (max-width: 768px) {
+  .imagem h1 {
+    font-size: 1.5rem;
+    padding: 10px;
+    letter-spacing: 1px;
+    white-space: normal;
+  }
+  .imagem img {
+    height: 220px;
+  }
+}
+
+.avaliacao-estrelas {
+  display: inline-block;
+}
+
+.estrela {
+  font-size: 2rem;
+  color: lightgray;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.estrela.hover,
+.estrela.selecionada {
+  color: gold;
+}
+
+/* Hero Section */
 .hero {
   position: relative;
   aspect-ratio: 1920 / 800;
@@ -434,7 +514,6 @@ header.scrolled {
   font-size: 2.5rem;
 }
 
-/* ===== GRADES DE RECEITAS E CATEGORIAS ===== */
 .receitas-grid,
 .categorias-grid {
   display: flex;
@@ -448,9 +527,9 @@ header.scrolled {
 
 .receita-card,
 .categoria-card {
-  flex: 1 1 250px;
-  max-width: 300px;
-  min-width: 0;
+  flex: 1 1 250px; /* cresce para preencher, base 250px */
+  max-width: 300px; /* evita cards muito largos */
+  min-width: 0; /* permite encolher */
   background: white;
   border-radius: 10px;
   overflow: hidden;
@@ -542,61 +621,30 @@ header.scrolled {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-/* ===== RESPONSIVIDADE DAS GRADES ===== */
 @media (max-width: 768px) {
   .receitas-grid,
   .categorias-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    padding: 0 12px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .receita-card,
   .categoria-card {
-    flex: none;
-    max-width: none;
     width: 100%;
-  }
-
-  .receita-imagem {
-    height: 160px; /* imagem menor */
-  }
-
-  .receita-info h3 {
-    font-size: 1rem; /* texto menor */
-  }
-
-  .meta-info {
-    font-size: 0.8rem;
-  }
-}
-
-/* Telas muito pequenas (ex.: 480px) */
-@media (max-width: 480px) {
-  .receitas-grid,
-  .categorias-grid {
-    grid-template-columns: 1fr; /* volta para uma coluna se muito estreito */
-  }
-}
-
-/* ===== HERO RESPONSIVO ===== */
-@media (max-width: 768px) {
-  .hero {
-    min-height: 200px; /* reduz altura */
-    aspect-ratio: auto; /* remove proporção fixa */
+    max-width: 400px;
+    flex: none;
   }
 
   .hero-content h1 {
-    font-size: 2rem; /* fonte menor */
+    font-size: 2.5rem;
   }
 
   .hero-content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
-/* ===== NEWSLETTER ===== */
+/* Newsletter */
 .newsletter {
   background: linear-gradient(135deg, rgba(106, 81, 47, 0.9) 0%, rgba(62, 46, 25, 0.95) 100%);
   padding: 80px 20px;
@@ -778,7 +826,6 @@ header.scrolled {
   }
 }
 
-/* ===== FOOTER ===== */
 footer {
   background: #4a5546;
   color: white;
@@ -860,7 +907,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ===== SEÇÕES DE INGREDIENTES E PREPARO ===== */
+/* Seções de ingredientes e preparo */
 section.ingredientes, section.preparo {
   max-width: 800px;
   margin: 40px auto;
@@ -984,7 +1031,7 @@ section h3::after {
   }
 }
 
-/* ===== BANNER DE CATEGORIA ===== */
+/* Banner de categoria */
 .categoria-banner {
   height: 400px;
   background-size: cover;
@@ -1131,7 +1178,7 @@ section h3::after {
   }
 }
 
-/* ===== CARD DE RECEITA COMPLETA ===== */
+/* Card de receita completa */
 .receita-container {
   max-width: 1400px;
   margin: 0 auto;
@@ -1319,7 +1366,7 @@ section h3::after {
   }
 }
 
-/* ===== CONVITE COZINHAR ===== */
+/* Convite cozinhar */
 .convite-cozinhar {
   display: flex;
   align-items: center;
@@ -1471,7 +1518,7 @@ section h3::after {
   }
 }
 
-/* ===== FEEDBACKS E COMENTÁRIOS ===== */
+/* Feedbacks e comentários */
 .feedbacks {
   max-width: 1200px;
   margin: 60px auto;
@@ -1848,9 +1895,25 @@ section h3::after {
   .imagem-comentario {
     max-width: 100%;
   }
+  .convite-cozinhar {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+  }
+  .texto-convite {
+    padding-right: 0;
+    text-align: center;
+  }
+  .texto-convite h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .gif-container.destaque {
+    margin: 0 auto;
+  }
 }
 
-/* ===== LOGIN E CADASTRO ===== */
+/* Login e cadastro */
 .container-login {
   display: flex;
   justify-content: center;
@@ -2128,7 +2191,7 @@ section h3::after {
   color: #f44336;
 }
 
-/* ===== PERFIL ===== */
+/* Perfil */
 .perfil-body {
   background: linear-gradient(#4f6849cc, #faad64cc);
 }
@@ -2307,7 +2370,7 @@ section h3::after {
   text-align: center;
 }
 
-/* ===== FAVORITOS ===== */
+/* Favoritos */
 .card-favorito {
   background: white;
   border-radius: 10px;
@@ -2335,7 +2398,7 @@ section h3::after {
   text-decoration: none;
 }
 
-/* ===== COMENTÁRIOS EXTRAS ===== */
+/* Comentários extras */
 .btn-excluir {
   background: none;
   border: none;
