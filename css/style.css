@@ -16,16 +16,19 @@ header {
   overflow: visible;
 }
 
-header.scrolled {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(74, 85, 70, 0.9) !important;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 0.3s ease-out;
-  z-index: 1000;
+/* Efeito scrolled apenas para telas maiores que 768px */
+@media (min-width: 769px) {
+  header.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(74, 85, 70, 0.9) !important;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-out;
+    z-index: 1000;
+  }
 }
 
 @keyframes fadeIn {
@@ -251,6 +254,18 @@ header.scrolled {
     padding: 10px 15px;
   }
 
+  /* Não aplicar efeito scrolled no mobile */
+  header.scrolled {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    background-color: #4a5546 !important;
+    backdrop-filter: none;
+    box-shadow: none;
+    animation: none;
+  }
+
   .logo {
     order: 1;
     justify-content: center;
@@ -267,7 +282,7 @@ header.scrolled {
   .barra-pesquisa input {
     flex: 1;
     width: auto;
-    min-width: 0; /* evita que o input estoure */
+    min-width: 0;
   }
 
   .barra-pesquisa button {
@@ -279,7 +294,6 @@ header.scrolled {
     flex-basis: 100%;
   }
 
-  /* Menu horizontal com quebra de linha, não vertical */
   .menu-principal ul {
     flex-direction: row;
     flex-wrap: wrap;
@@ -298,7 +312,6 @@ header.scrolled {
     font-size: 0.85rem;
   }
 
-  /* Esconde ícones no mobile para economizar espaço */
   .menu-principal a i {
     display: none;
   }
@@ -330,88 +343,7 @@ header.scrolled {
   }
 }
 
-/* ===== DEMAIS ESTILOS (mantidos como estavam, mas com ajustes de responsividade) ===== */
-
-.imagem {
-  position: relative;
-  text-align: center;
-  margin: 20px 0;
-  border: 6px solid #a07133;
-}
-
-.imagem img {
-  max-width: 100%;
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  display: block;
-  filter: brightness(0.8) contrast(1.1);
-  transition: filter 0.5s ease;
-}
-
-.imagem:hover img {
-  filter: brightness(0.6) contrast(1.2);
-}
-
-.imagem h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 700;
-  font-size: 3.5rem;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  margin: 0;
-  padding: 30px 60px;
-  white-space: nowrap;
-  background: rgba(0, 0, 0, 0.5);
-  mix-blend-mode: screen;
-  transition: all 0.3s ease;
-  border: 2px solid #fff;
-  animation: fadeInTitle 1s ease forwards;
-}
-
-.imagem h1:hover {
-  letter-spacing: 6px;
-}
-
-@keyframes fadeInTitle {
-  from { opacity: 0; transform: translate(-50%, -48%); }
-  to { opacity: 1; transform: translate(-50%, -50%); }
-}
-
-@media (max-width: 768px) {
-  .imagem h1 {
-    font-size: 1.5rem;
-    padding: 10px;
-    letter-spacing: 1px;
-    white-space: normal;
-  }
-  .imagem img {
-    height: 220px;
-  }
-}
-
-.avaliacao-estrelas {
-  display: inline-block;
-}
-
-.estrela {
-  font-size: 2rem;
-  color: lightgray;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.estrela.hover,
-.estrela.selecionada {
-  color: gold;
-}
-
-/* Hero Section */
+/* ===== HERO SECTION AJUSTADO PARA MOBILE ===== */
 .hero {
   position: relative;
   aspect-ratio: 1920 / 800;
@@ -422,6 +354,22 @@ header.scrolled {
   justify-content: center;
   color: white;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    aspect-ratio: unset;
+    min-height: 300px;
+    max-height: none;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
 }
 
 .hero-video-container {
@@ -528,7 +476,7 @@ header.scrolled {
   font-size: 2.5rem;
 }
 
-/* Grades de receitas e categorias - padrão desktop */
+/* Grades de receitas e categorias */
 .receitas-grid,
 .categorias-grid {
   display: grid;
@@ -546,7 +494,6 @@ header.scrolled {
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
-  /* Remove larguras fixas */
   width: 100%;
   max-width: none;
 }
@@ -646,12 +593,11 @@ header.scrolled {
 
   .receita-card,
   .categoria-card {
-    /* Ajustes para caber em duas colunas */
     border-radius: 8px;
   }
 
   .receita-imagem {
-    height: 150px; /* reduz altura da imagem */
+    height: 150px;
   }
 
   .receita-info {
@@ -667,23 +613,14 @@ header.scrolled {
   }
 
   .categoria-card {
-    height: 100px; /* reduz altura do card categoria */
+    height: 100px;
   }
 
   .categoria-card h3 {
     font-size: 1.2rem;
   }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-content p {
-    font-size: 1.2rem;
-  }
 }
 
-/* Para telas muito pequenas, podemos manter 2 colunas, mas reduzir ainda mais */
 @media (max-width: 400px) {
   .receitas-grid,
   .categorias-grid {
@@ -1397,6 +1334,7 @@ section h3::after {
     padding: 0 15px;
   }
   .card-receita {
+    display: block; /* garante que não use flex */
     padding: 30px 20px;
     width: 95%;
     margin: 40px auto;
@@ -1592,14 +1530,14 @@ section h3::after {
   text-align: center;
 }
 
-/* Estrelas de avaliação - agora flex para não quebrar */
+/* Estrelas de avaliação - flex para não quebrar */
 .estrelas-ranking {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   margin: 20px 0;
-  letter-spacing: normal; /* remove letter-spacing problemático */
+  letter-spacing: normal;
   flex-wrap: nowrap;
   white-space: nowrap;
 }
@@ -1973,12 +1911,11 @@ section h3::after {
     margin: 0 auto;
   }
 
-  /* Estrelas menores no mobile para caber na mesma linha */
   .estrelas-ranking {
     gap: 5px;
   }
   .estrela {
-    font-size: 2rem; /* diminui um pouco */
+    font-size: 2rem;
   }
 }
 
@@ -2484,7 +2421,7 @@ section h3::after {
 
 @media (max-width: 768px) {
   .btn-excluir {
-    opacity: 1; /* sempre visível no mobile */
+    opacity: 1;
   }
 }
 
