@@ -47,6 +47,10 @@ const Receita = sequelize.define('Receita', {
   destaque: {
     type: DataTypes.BOOLEAN,
     defaultValue: false // exibida na seção "Receitas em Destaque" da Home
+  },
+  criadoPor: {
+    type: DataTypes.INTEGER, // id do usuário que cadastrou (null para as receitas originais/seed)
+    allowNull: true
   }
 }, {
   tableName: 'Receitas',

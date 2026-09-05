@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title id="titulo-pagina">Receita | Giro Culinário</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="icon" href="../IMG/Logo_circular.png" type="image/x-icon" />
+  <link rel="icon" href="https://ik.imagekit.io/alm845a8y/giro-culinario/logo-circular.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -15,36 +15,42 @@
   <!-- Cabeçalho padronizado -->
   <header>
     <div class="logo">
-      <a href="index.html">
-        <img src="../IMG/Logo_circular.png" alt="Logo do site de receitas">
+      <a href="/TodasReceitas/Home.html">
+        <img src="https://ik.imagekit.io/alm845a8y/giro-culinario/logo-circular.png" alt="Logo do site de receitas">
       </a>
     </div>
 
     <nav class="menu-principal">
       <ul>
-        <li><a href="Home.html">Início</a></li>
+        <li><a href="/TodasReceitas/Home.html"><i class="fas fa-house"></i> Início</a></li>
         <li class="dropdown">
-          <a href="#">Receitas ▾</a>
+          <a href="javascript:void(0)"><i class="fas fa-utensils"></i> Receitas ▾</a>
           <ul class="submenu">
-            <li><a href="../PaginaCulinarias/Culinaria_Brasileira.html">Culinária Brasileira</a></li>
-            <li><a href="../PaginaCulinarias/Culinaria_Italiana.html">Culinária Italiana</a></li>
-            <li><a href="../PaginaCulinarias/Culinaria_Oriental.html">Culinária Oriental</a></li>
-            <li><a href="../PaginaCulinarias/Culinaria_Mediterranea.html">Culinária Mediterrânea</a></li>
+            <li><a href="/PaginaCulinarias/Culinaria_Brasileira.html">Culinária Brasileira</a></li>
+            <li><a href="/PaginaCulinarias/Culinaria_Italiana.html">Culinária Italiana</a></li>
+            <li><a href="/PaginaCulinarias/Culinaria_Oriental.html">Culinária Oriental</a></li>
+            <li><a href="/PaginaCulinarias/Culinaria_Mediterranea.html">Culinária Mediterrânea</a></li>
           </ul>
         </li>
-        <li><a href="perfil.html" id="perfilLink" style="display: none;">Meu Perfil</a></li>
-        <li><a href="../Login e CadastroLogin/Login.html" id="loginLink">Entrar</a></li>
-        <li><a href="/api/auth/logout" id="logoutLink" style="display: none;">Sair</a></li>
+        <li class="dropdown" id="perfilDropdown" style="display: none;">
+                    <a href="javascript:void(0)"><i class="fas fa-user"></i> Meu Perfil</a>
+                    <ul class="submenu">
+                        <li><a href="/TodasReceitas/perfil.html" id="perfilLink"><i class="fas fa-id-card"></i> Ver Perfil</a></li>
+                        <li><a href="/api/auth/logout" id="logoutLink"><i class="fas fa-right-from-bracket"></i> Sair</a></li>
+                    </ul>
+                </li>
+                <li><a href="/TodasReceitas/adicionar-receita.html" id="adicionarReceitaLink" style="display: none;"><i class="fas fa-square-plus"></i> Adicionar Receita</a></li>
+                <li><a href="/Login e CadastroLogin/Login.html" id="loginLink"><i class="fas fa-right-to-bracket"></i> Entrar</a></li>
       </ul>
     </nav>
-    <script src="../Javascript/header.js"></script>
+    <script src="/Javascript/header.js"></script>
     <div class="barra-pesquisa">
       <input type="text" id="buscaReceitas" placeholder="Buscar receitas..." />
       <button id="botaoBuscar">Buscar</button>
       <div id="resultadoBusca" class="resultados-busca-container"></div>
     </div>
 
-    <script src="../Javascript/pesquisa.js"></script>
+    <script src="/Javascript/pesquisa.js"></script>
   </header>
 
   <main data-receita-id="">
@@ -141,9 +147,9 @@
       <div class="footer-section">
         <h3>Links Úteis</h3>
         <ul>
-          <li><a href="../Login e CadastroLogin/termos.html" target="_blank">Termos de Uso</a></li>
-          <li><a href="../Login e CadastroLogin/privacidade.html" target="_blank">Política de Privacidade</a></li>
-          <li><a href="../Login e CadastroLogin/faq.html" target="_blank">Dúvidas Frequentes</a></li>
+          <li><a href="/Login e CadastroLogin/termos.html" target="_blank">Termos de Uso</a></li>
+          <li><a href="/Login e CadastroLogin/privacidade.html" target="_blank">Política de Privacidade</a></li>
+          <li><a href="/Login e CadastroLogin/faq.html" target="_blank">Dúvidas Frequentes</a></li>
         </ul>
       </div>
 
@@ -163,11 +169,11 @@
     </div>
   </footer>
 
-  <script src="../Javascript/script.js"></script>
-  <script src="../Javascript/main.js"></script>
-  <script src="../Javascript/receitas.js"></script>
-  <script src="../Javascript/receita-card.js"></script>
-  <script src="../Javascript/receita-dinamica.js"></script>
+  <script src="/Javascript/script.js"></script>
+  <script src="/Javascript/main.js"></script>
+  <script src="/Javascript/receitas.js"></script>
+  <script src="/Javascript/receita-card.js"></script>
+  <script src="/Javascript/receita-dinamica.js"></script>
 </body>
 
 </html>

@@ -61,4 +61,11 @@ function configurarBusca() {
 document.addEventListener("DOMContentLoaded", async () => {
   await carregarReceitas();
   configurarBusca();
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.barra-pesquisa')) {
+      const container = document.getElementById('resultadoBusca');
+      if (container) container.style.display = 'none';
+    }
+  });
 });

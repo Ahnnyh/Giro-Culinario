@@ -7,7 +7,7 @@
   <title>Cadastro - Giro Culinário</title>
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="icon" href="../IMG/Logo_circular.png" type="image/x-icon" />
+  <link rel="icon" href="https://ik.imagekit.io/alm845a8y/giro-culinario/logo-circular.png" type="image/x-icon" />
 
 </head>
 
@@ -16,15 +16,15 @@
   <header>
     <div class="logo">
       <a href="index.html">
-        <img src="../IMG/Logo_circular.png" alt="Logo do site de receitas">
+        <img src="https://ik.imagekit.io/alm845a8y/giro-culinario/logo-circular.png" alt="Logo do site de receitas">
       </a>
     </div>
 
     <nav class="menu-principal">
       <ul>
-        <li><a href="../TodasReceitas/Home.html">Início</a></li>
+        <li><a href="../TodasReceitas/Home.html"><i class="fas fa-house"></i> Início</a></li>
         <li class="dropdown">
-          <a href="#">Receitas ▾</a>
+          <a href="#"><i class="fas fa-utensils"></i> Receitas ▾</a>
           <ul class="submenu">
             <li><a href="../PaginaCulinarias/Culinaria_Brasileira.html">Culinária Italiana</a></li>
             <li><a href="../PaginaCulinarias/Culinaria_Italiana.html">Culinária Italiana</a></li>
@@ -32,8 +32,9 @@
             <li><a href="../PaginaCulinarias/Culinaria_Mediterranea.html">Culinária Mediterrânea</a></li>
           </ul>
         </li>
-        <li><a href="/login" id="loginLink">Entrar</a></li>
-        <li><a href="/api/auth/logout" id="logoutLink" style="display: none;">Sair</a></li>
+        <li><a href="/login" id="loginLink"><i class="fas fa-right-to-bracket"></i> Entrar</a></li>
+        <li id="saudacaoUsuarioItem"><span id="saudacaoUsuario" class="saudacao-usuario"></span></li>
+        <li><a href="/api/auth/logout" id="logoutLink" style="display: none;"><i class="fas fa-right-from-bracket"></i> Sair</a></li>
       </ul>
     </nav>
     <script src="../Javascript/header.js"></script>
@@ -144,7 +145,6 @@
 
   <script src="../Javascript/main.js"></script>
   <script src="../Javascript/cadastro.js"></script>
-  <script src="../Javascript/header.js"></script>
 </body>
 
 </html>

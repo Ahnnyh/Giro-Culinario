@@ -7,7 +7,7 @@
 /**
  * Resolve o caminho de uma imagem/vídeo vindo da API pra funcionar em qualquer página,
  * não importa a profundidade de pastas, e continuar funcionando depois da migração pra CDN:
- *   - "IMG/Brigadeiro.jpg"                 -> "/IMG/Brigadeiro.jpg" (raiz do site)
+ *   - "https://ik.imagekit.io/alm845a8y/giro-culinario/brigadeiro.jpg"                 -> "https://ik.imagekit.io/alm845a8y/giro-culinario/brigadeiro.jpg" (raiz do site)
  *   - "https://ik.imagekit.io/.../x.jpg"   -> inalterado (URL absoluta do CDN)
  */
 function resolverCaminhoMidia(caminho) {

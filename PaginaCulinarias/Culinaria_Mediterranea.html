@@ -7,7 +7,7 @@
     <title>Culinária Mediterrânea | Giro Culinário</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="../IMG/Logo_circular.png" type="image/x-icon" />
+    <link rel="icon" href="https://ik.imagekit.io/alm845a8y/giro-culinario/logo-circular.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -15,15 +15,15 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="../IMG/Logo_circular.png" alt="Logo do site de receitas">
+                <img src="https://ik.imagekit.io/alm845a8y/giro-culinario/logo-circular.png" alt="Logo do site de receitas">
             </a>
         </div>
 
         <nav class="menu-principal">
             <ul>
-                <li><a href="../TodasReceitas/Home.html">Início</a></li>
+                <li><a href="../TodasReceitas/Home.html"><i class="fas fa-house"></i> Início</a></li>
                 <li class="dropdown">
-                    <a href="#">Receitas ▾</a>
+                    <a href="#"><i class="fas fa-utensils"></i> Receitas ▾</a>
                     <ul class="submenu">
                         <li><a href="../PaginaCulinarias/Culinaria_Brasileira.html">Culinária Brasileira</a></li>
                         <li><a href="../PaginaCulinarias/Culinaria_Italiana.html">Culinária Italiana</a></li>
@@ -31,9 +31,15 @@
                         <li><a href="../PaginaCulinarias/Culinaria_Mediterranea.html">Culinária Mediterrânea</a></li>
                     </ul>
                 </li>
-                <li><a href="../TodasReceitas/perfil.html" id="perfilLink" style="display: none;">Meu Perfil</a></li>
-                <li><a href="../Login e CadastroLogin/Login.html" id="loginLink">Entrar</a></li>
-                <li><a href="/api/auth/logout" id="logoutLink" style="display: none;">Sair</a></li>
+        <li class="dropdown" id="perfilDropdown" style="display: none;">
+            <a href="javascript:void(0)"><i class="fas fa-user"></i> Meu Perfil</a>
+            <ul class="submenu">
+                <li><a href="../TodasReceitas/perfil.html" id="perfilLink"><i class="fas fa-id-card"></i> Ver Perfil</a></li>
+                <li><a href="/api/auth/logout" id="logoutLink"><i class="fas fa-right-from-bracket"></i> Sair</a></li>
+            </ul>
+        </li>
+                <li><a href="../TodasReceitas/adcionar-receita.html" id="adicionarReceitaLink" style="display: none;"><i class="fas fa-square-plus"></i> Adicionar Receita</a></li>
+                <li><a href="../Login e CadastroLogin/Login.html" id="loginLink"><i class="fas fa-right-to-bracket"></i> Entrar</a></li>
             </ul>
         </nav>
         <script src="../Javascript/header.js"></script>
@@ -50,7 +56,7 @@
     <main>
         <!-- Banner da Categoria -->
         <section class="categoria-banner"
-            style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../IMG/Mediterranea.png');">
+            style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://ik.imagekit.io/alm845a8y/giro-culinario/mediterranea.png');">
             <div class="banner-content">
                 <h1>Culinária Mediterrânea</h1>
                 <p>Sabores frescos e saudáveis do Mediterrâneo</p>

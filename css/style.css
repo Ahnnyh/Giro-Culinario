@@ -65,8 +65,10 @@ header.scrolled {
 
 .menu-principal ul {
   display: flex;
+  flex-wrap: wrap;
   justify-self: center;
-  gap: 20px;
+  gap: 10px 20px;
+  row-gap: 6px;
   grid-column: 2;
   list-style: none;
   margin: 0;
@@ -84,6 +86,7 @@ header.scrolled {
   position: relative;
   font-size: 1.05rem;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .menu-principal a:hover {
@@ -92,17 +95,48 @@ header.scrolled {
 
 .menu-principal > ul > li > a::after {
   content: '';
-  position: relative;
+  position: absolute;
   width: 0;
   height: 2px;
-  bottom: 0;
-  left: 0;
+  bottom: 2px;
+  left: 12px;
   background-color: #5c3e1b;
   transition: width 0.3s;
 }
 
 .menu-principal > ul > li > a:hover::after {
-  width: 100%;
+  width: calc(100% - 24px);
+}
+
+.menu-principal > ul > li > a.ativo::after {
+  width: calc(100% - 24px);
+  background-color: #e67a3d;
+}
+
+.menu-principal a i {
+  margin-right: 6px;
+  width: 16px;
+  text-align: center;
+}
+
+.menu-principal a.ativo {
+  color: #e67a3d;
+}
+
+.saudacao-hero {
+  display: inline-block;
+  color: #ffd8a8;
+  font-weight: 1500;
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.saudacao-usuario {
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 12px;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -306,7 +340,7 @@ header.scrolled .barra-pesquisa {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 200px;
+  width: 230px;
   background: #fff9f2;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -337,6 +371,7 @@ header.scrolled .barra-pesquisa {
 .submenu a {
   color: #3e5a36 !important;
   font-weight: 500 !important;
+  white-space: normal;
   display: block;
 }
 
@@ -478,8 +513,9 @@ header.scrolled .barra-pesquisa {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh;
-    min-height: 600px;
+    aspect-ratio: 1920 / 800;
+    max-height: 100vh;
+    min-height: 340px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -530,7 +566,7 @@ header.scrolled .barra-pesquisa {
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 3.1rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
@@ -1566,6 +1602,155 @@ section h3::after {
   box-shadow: 0 5px 15px rgba(74, 107, 91, 0.2);
 }
 
+.lista-dinamica {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+.lista-dinamica li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f5f0;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+}
+
+.lista-dinamica .remover-item {
+  background: none;
+  border: none;
+  color: #a33;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0 5px;
+}
+
+.linha-adicionar-item {
+  display: flex;
+  gap: 10px;
+}
+
+.linha-adicionar-item .campo {
+  flex: 1;
+}
+
+.botao-add-item {
+  background: linear-gradient(135deg, #5c3e1b, #bd8a56);
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+
+.botao-add-item:hover {
+  background: linear-gradient(135deg, #4a5546, #6c7b63);
+}
+
+.secao-formulario {
+  background: #fdfaf6;
+  border: 1px solid rgba(92, 62, 27, 0.2);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.secao-formulario h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #5c3e1b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.secao-formulario h3 i {
+  color: #bd8a56;
+}
+
+.secao-formulario label strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #4a3520;
+}
+
+.secao-formulario label strong i {
+  margin-right: 6px;
+  color: #bd8a56;
+  width: 16px;
+}
+
+.cabecalho-formulario {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cabecalho-formulario i {
+  font-size: 2.2rem;
+  color: #bd8a56;
+  margin-bottom: 10px;
+}
+
+.cabecalho-formulario p {
+  color: #6b5b46;
+  margin-top: 5px;
+}
+
+#lista-ingredientes li {
+  position: relative;
+  padding-left: 32px;
+}
+
+#lista-ingredientes li::before {
+  content: '\f0da';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 14px;
+  color: #bd8a56;
+}
+
+#lista-preparo {
+  counter-reset: passo;
+}
+
+#lista-preparo li {
+  position: relative;
+  padding-left: 42px;
+}
+
+#lista-preparo li::before {
+  counter-increment: passo;
+  content: counter(passo);
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #5c3e1b;
+  color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.botao-enviar i {
+  margin-right: 8px;
+}
+
 .comentarios {
   padding: 30px;
 }
@@ -1690,7 +1875,7 @@ section h3::after {
     position: relative;
     background-color: transparent;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                     url('../IMG/Global.jpg');
+                     url('https://ik.imagekit.io/alm845a8y/giro-culinario/global.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -2184,7 +2369,7 @@ section h3::after {
 
   background: 
     linear-gradient(to bottom, #ffeedacc, #f8b678cc), /* degradê com transparência */
-    url('../IMG/Global.jpg') no-repeat center center / cover;
+    url('https://ik.imagekit.io/alm845a8y/giro-culinario/global.jpg') no-repeat center center / cover;
 
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);

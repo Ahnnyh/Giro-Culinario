@@ -7,22 +7,22 @@
     <title>Giro Culinário | Descubra Receitas Incríveis</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="../IMG/Logo_circular.png" type="image/x-icon" />
+    <link rel="icon" href="https://ik.imagekit.io/alm845a8y/giro-culinario/logo-circular.png" type="image/x-icon" />
 </head>
 
 <body>
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="../IMG/Logo_circular.png" alt="Logo do site de receitas">
+                <img src="https://ik.imagekit.io/alm845a8y/giro-culinario/logo-circular.png" alt="Logo do site de receitas">
             </a>
         </div>
 
         <nav class="menu-principal">
             <ul>
-                <li><a href="../TodasReceitas/Home.html">Início</a></li>
+                <li><a href="../TodasReceitas/Home.html"><i class="fas fa-house"></i> Início</a></li>
                 <li class="dropdown">
-                    <a href="#">Receitas ▾</a>
+                    <a href="#"><i class="fas fa-utensils"></i> Receitas ▾</a>
                     <ul class="submenu">
                         <li><a href="../PaginaCulinarias/Culinaria_Brasileira.html">Culinária Brasileira</a></li>
                         <li><a href="../PaginaCulinarias/Culinaria_Italiana.html">Culinária Italiana</a></li>
@@ -30,9 +30,15 @@
                         <li><a href="../PaginaCulinarias/Culinaria_Mediterranea.html">Culinária Mediterrânea</a></li>
                     </ul>
                 </li>
-                <li><a href="../TodasReceitas/perfil.html" id="perfilLink" style="display: none;">Meu Perfil</a></li>
-                <li><a href="../Login e CadastroLogin/Login.html" id="loginLink">Entrar</a></li>
-                <li><a href="/api/auth/logout" id="logoutLink" style="display: none;">Sair</a></li>
+        <li class="dropdown" id="perfilDropdown" style="display: none;">
+            <a href="javascript:void(0)"><i class="fas fa-user"></i> Meu Perfil</a>
+            <ul class="submenu">
+                <li><a href="../TodasReceitas/perfil.html" id="perfilLink"><i class="fas fa-id-card"></i> Ver Perfil</a></li>
+                <li><a href="/api/auth/logout" id="logoutLink"><i class="fas fa-right-from-bracket"></i> Sair</a></li>
+            </ul>
+        </li>
+                <li><a href="../TodasReceitas/adicionar-receita.html" id="adicionarReceitaLink" style="display: none;"><i class="fas fa-square-plus"></i> Adicionar Receita</a></li>
+                <li><a href="../Login e CadastroLogin/Login.html" id="loginLink"><i class="fas fa-right-to-bracket"></i> Entrar</a></li>
             </ul>
         </nav>
         <script src="../Javascript/header.js"></script>
@@ -53,16 +59,17 @@
         <section class="hero">
             <div class="hero-video-container">
                 <video autoplay muted loop playsinline class="hero-video">
-                    <source src="../IMG/Home.mp4" type="video/mp4">
+                    <source src="https://ik.imagekit.io/alm845a8y/giro-culinario/home.mp4" type="video/mp4">
                     <!-- Fallback para navegadores que não suportam vídeo -->
-                    <img src="../IMG/Global.jpg" alt="Background culinário" class="hero-fallback">
+                    <img src="https://ik.imagekit.io/alm845a8y/giro-culinario/global.jpg" alt="Background culinário" class="hero-fallback">
                 </video>
                 <div class="video-overlay"></div>
             </div>
 
             <div class="hero-content">
-                <h1>Descubra o Prazer de Cozinhar</h1>
-                <p>Mais de 1.000 receitas testadas e aprovadas para todos os gostos e ocasiões</p>
+                <span id="saudacaoUsuario" class="saudacao-hero"></span>
+                    <h1>Descubra o Prazer de Cozinhar</h1>
+                <p>Todas as receitas testadas e aprovadas para todos os gostos e ocasiões</p>
                 <a href="../PaginaCulinarias/Explorar.html" class="btn-primary">Explorar Receitas</a>
             </div>
         </section>
@@ -78,19 +85,19 @@
             <h2>Explore por Categoria</h2>
             <div class="categorias-grid">
                 <a href="../PaginaCulinarias/Culinaria_Brasileira.html" class="categoria-card"
-                    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../IMG/Brasileiras.png');">
+                    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://ik.imagekit.io/alm845a8y/giro-culinario/brasileiras.png');">
                     <h3>Brasileiras</h3>
                 </a>
                 <a href="../PaginaCulinarias/Culinaria_Italiana.html" class="categoria-card"
-                    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../IMG/Italianas.png');">
+                    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://ik.imagekit.io/alm845a8y/giro-culinario/italianas.png');">
                     <h3>Italianas</h3>
                 </a>
                 <a href="../PaginaCulinarias/Culinaria_Oriental.html" class="categoria-card"
-                    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../IMG/Oriental.png');">
+                    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://ik.imagekit.io/alm845a8y/giro-culinario/oriental.png');">
                     <h3>Oriental</h3>
                 </a>
                 <a href="../PaginaCulinarias/Culinaria_Mediterranea.html" class="categoria-card"
-                    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../IMG/Mediterranea.png');">
+                    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://ik.imagekit.io/alm845a8y/giro-culinario/mediterranea.png');">
                     <h3>Mediterrâneas</h3>
                 </a>
             </div>

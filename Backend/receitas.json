@@ -2,7 +2,7 @@
   {
     "id": "brigadeiro-tradicional",
     "nome": "Brigadeiro Tradicional",
-    "imagem": "../IMG/Brigadeiro.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/brigadeiro.jpg",
     "tempo": "10 min",
     "porcoes": "15 unidades",
     "link": "../TodasReceitas/Brasileira/brigadeiro.html"
@@ -10,7 +10,7 @@
   {
     "id": "escondidinho-carne-seca",
     "nome": "Escondidinho de Carne Seca",
-    "imagem": "../IMG/Escondidinho.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/escondidinho.jpg",
     "tempo": "1h",
     "porcoes": "6 porções",
     "link": "../TodasReceitas/Brasileira/escondidinho.html"
@@ -18,7 +18,7 @@
   {
     "id": "feijoada",
     "nome": "Feijoada",
-    "imagem": "../IMG/Feijoada.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/feijoada.jpg",
     "tempo": "2h",
     "porcoes": "8 porções",
     "link": "../TodasReceitas/Brasileira/feijoada.html"
@@ -26,7 +26,7 @@
   {
     "id": "moqueca-peixe",
     "nome": "Moqueca de Peixe",
-    "imagem": "../IMG/Moqueca.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/moqueca.jpg",
     "tempo": "45 min",
     "porcoes": "4 porções",
     "link": "../TodasReceitas/Brasileira/moqueca.html"
@@ -34,7 +34,7 @@
   {
     "id": "pao-de-queijo",
     "nome": "Pão de Queijo Mineiro",
-    "imagem": "../IMG/Pão de queijo.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/pao-de-queijo.jpg",
     "tempo": "25 min",
     "porcoes": "20 unidades",
     "link": "../TodasReceitas/Brasileira/pao_de_queijo.html"
@@ -42,7 +42,7 @@
   {
     "id": "lasanha-bolonhesa",
     "nome": "Lasanha à Bolonhesa",
-    "imagem": "../IMG/Lasanha.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/lasanha.jpg",
     "tempo": "1h",
     "porcoes": "6 porções",
     "link": "../TodasReceitas/Italiana/lasanha.html"
@@ -50,7 +50,7 @@
   {
     "id": "pizza-margherita",
     "nome": "Pizza Margherita Artesanal",
-    "imagem": "../IMG/Pizza.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/pizza.jpg",
     "tempo": "1h30",
     "porcoes": "2 pizzas",
     "link": "../TodasReceitas/Italiana/pizza.html"
@@ -58,7 +58,7 @@
   {
     "id": "risoto-cogumelos",
     "nome": "Risoto de Cogumelos",
-    "imagem": "../IMG/Risoto.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/risoto.jpg",
     "tempo": "40 min",
     "porcoes": "4 porções",
     "link": "../TodasReceitas/Italiana/risoto.html"
@@ -66,7 +66,7 @@
   {
     "id": "tiramisu",
     "nome": "Tiramisù",
-    "imagem": "../IMG/Tiramisu.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/tiramisu.jpg",
     "tempo": "3h (com geladeira)",
     "porcoes": "6 porções",
     "link": "../TodasReceitas/Italiana/tiramisu.html"
@@ -74,7 +74,7 @@
   {
     "id": "arancini-de-queijo",
     "nome": "Arancini de Queijo",
-    "imagem": "../IMG/Arancini.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/arancini.jpg",
     "tempo": "1h15",
     "porcoes": "20 unidades",
     "link": "../TodasReceitas/Italiana/arancini.html"
@@ -82,7 +82,7 @@
   {
     "id": "falafel-assado",
     "nome": "Falafel Assado",
-    "imagem": "../IMG/Falafel.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/falafel.jpg",
     "tempo": "1h",
     "porcoes": "4 porções",
     "link": "../TodasReceitas/Mediterranea/falafel.html"
@@ -90,7 +90,7 @@
   {
     "id": "frango-grelhado",
     "nome": "Frango Grelhado com Ervas e Limão",
-    "imagem": "../IMG/Frango grelhado.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/frango-grelhado.jpg",
     "tempo": "30 min",
     "porcoes": "4 porções",
     "link": "../TodasReceitas/Mediterranea/frango_grelhado.html"
@@ -106,7 +106,7 @@
   {
     "id": "moussaka-grega",
     "nome": "Moussaka Grega",
-    "imagem": "../IMG/Moussaka.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/moussaka.jpg",
     "tempo": "1h20",
     "porcoes": "6 porções",
     "link": "../TodasReceitas/Mediterranea/moussaka.html"
@@ -114,7 +114,7 @@
   {
     "id": "tabule-libanes",
     "nome": "Tabule Libanês",
-    "imagem": "../IMG/Tabule.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/tabule.jpg",
     "tempo": "30 min",
     "porcoes": "4 porções",
     "link": "../TodasReceitas/Mediterranea/tabule.html"
@@ -122,7 +122,7 @@
   {
     "id": "frango-xadrez",
     "nome": "Frango Xadrez",
-    "imagem": "../IMG/Frango Xadrez.gif",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/frango-xadrez.gif",
     "tempo": "35 min",
     "porcoes": "4 porções",
     "link": "../TodasReceitas/Oriental/frango_xadrez.html"
@@ -130,7 +130,7 @@
   {
     "id": "gyoza",
     "nome": "Gyoza (Pastelzinho Japonês)",
-    "imagem": "../IMG/Gyoza.png",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/gyoza.png",
     "tempo": "1h",
     "porcoes": "30 unidades",
     "link": "../TodasReceitas/Oriental/gyoza.html"
@@ -138,7 +138,7 @@
   {
     "id": "pad-thai-tradicional",
     "nome": "Pad Thai Tradicional",
-    "imagem": "../IMG/pad-thai.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/pad-thai.jpg",
     "tempo": "40 min",
     "porcoes": "4 porções",
     "link": "../TodasReceitas/Oriental/padthai.html"
@@ -146,7 +146,7 @@
   {
     "id": "sushi-salmao",
     "nome": "Sushi de Salmão",
-    "imagem": "../IMG/SushiSalmao.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/sushisalmao.jpg",
     "tempo": "1h",
     "porcoes": "20 unidades",
     "link": "../TodasReceitas/Oriental/sushi.html"
@@ -154,7 +154,7 @@
   {
     "id": "yakissoba",
     "nome": "Yakissoba de Legumes",
-    "imagem": "../IMG/Yakissoba.png",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/yakissoba.png",
     "tempo": "45 min",
     "porcoes": "4 porções",
     "link": "../TodasReceitas/Oriental/yakissoba.html"

@@ -14,15 +14,15 @@
   <header>
     <div class="logo">
       <a href="index.html">
-        <img src="../IMG/Logo_circular.png" alt="Logo do site de receitas">
+        <img src="https://ik.imagekit.io/alm845a8y/giro-culinario/logo-circular.png" alt="Logo do site de receitas">
       </a>
     </div>
 
     <nav class="menu-principal">
       <ul>
-        <li><a href="../Home.html">Início</a></li>
+        <li><a href="../Home.html"><i class="fas fa-house"></i> Início</a></li>
         <li class="dropdown">
-          <a href="#">Receitas ▾</a>
+          <a href="#"><i class="fas fa-utensils"></i> Receitas ▾</a>
           <ul class="submenu">
             <li><a href="../PaginaCulinarias/Culinaria_Brasileira.html">Culinária Brasileira</a></li>
             <li><a href="../PaginaCulinarias/Culinaria_Italiana.html">Culinária Italiana</a></li>
@@ -30,9 +30,11 @@
             <li><a href="../PaginaCulinarias/Culinaria_Mediterranea.html">Culinária Mediterrânea</a></li>
           </ul>
         </li>
-        <li><a href="../TodasReceitas/perfil.html" id="perfilLink" style="display: none;">Meu Perfil</a></li>
-        <li><a href="../Login e CadastroLogin/Login.html" id="loginLink">Entrar</a></li>
-        <li><a href="/api/auth/logout" id="logoutLink" style="display: none;">Sair</a></li>
+        <li><a href="../TodasReceitas/perfil.html" id="perfilLink" style="display: none;"><i class="fas fa-user"></i> Meu Perfil</a></li>
+        <li><a href="../TodasReceitas/adicionar-receita.html" id="adicionarReceitaLink" style="display: none;"><i class="fas fa-square-plus"></i> Adicionar Receita</a></li>
+        <li><a href="../Login e CadastroLogin/Login.html" id="loginLink"><i class="fas fa-right-to-bracket"></i> Entrar</a></li>
+        <li id="saudacaoUsuarioItem"><span id="saudacaoUsuario" class="saudacao-usuario"></span></li>
+        <li><a href="/api/auth/logout" id="logoutLink" style="display: none;"><i class="fas fa-right-from-bracket"></i> Sair</a></li>
       </ul>
     </nav>
     <script src="../Javascript/header.js"></script>
@@ -47,7 +49,7 @@
   </header>
 
     <main>
-        <section class="categoria-banner-menor" style="background-image: url('../IMG/Receitas.png');">
+        <section class="categoria-banner-menor" style="background-image: url('https://ik.imagekit.io/alm845a8y/giro-culinario/receitas.png');">
             <div class="banner-content">
                 <h1>Explore sabores do mundo inteiro</h1>
             </div>

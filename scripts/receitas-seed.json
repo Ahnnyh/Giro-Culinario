@@ -3,7 +3,7 @@
     "id": "brigadeiro-tradicional",
     "nome": "Brigadeiro Tradicional",
     "categoria": "Brasileira",
-    "imagem": "IMG/Brigadeiro.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/brigadeiro.jpg",
     "tempo": "10 min",
     "porcoes": "15 unidades",
     "ingredientes": [
@@ -20,7 +20,7 @@
       "Modelar: Com as mãos untadas, enrole bolinhas e passe no granulado.",
       "Servir: Coloque em forminhas de papel e leve à geladeira por 30 minutos se quiser mais firme."
     ],
-    "midiaPreparo": "IMG/brigadeiro-gif.mp4",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/brigadeiro-gif.mp4",
     "tipoMidiaPreparo": "video",
     "destaque": false
   },
@@ -28,7 +28,7 @@
     "id": "escondidinho-carne-seca",
     "nome": "Escondidinho de Carne Seca",
     "categoria": "Brasileira",
-    "imagem": "IMG/Escondidinho.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/escondidinho.jpg",
     "tempo": "1h",
     "porcoes": "6 porções",
     "ingredientes": [
@@ -56,7 +56,7 @@
       "Purê de Mandioca: Cozinhe a mandioca até ficar macia. Amasse e misture com manteiga, leite, sal e pimenta até formar um purê cremoso.",
       "Montagem e Gratinado: Em um refratário, faça uma camada de recheio e cubra com o purê. Finalize com queijo ralado e leve ao forno (200°C) por 15–20 minutos."
     ],
-    "midiaPreparo": "IMG/escondidinho-gif.mp4",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/escondidinho-gif.mp4",
     "tipoMidiaPreparo": "video",
     "destaque": false
   },
@@ -64,7 +64,7 @@
     "id": "feijoada",
     "nome": "Feijoada",
     "categoria": "Brasileira",
-    "imagem": "IMG/Feijoada.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/feijoada.jpg",
     "tempo": "2h",
     "porcoes": "8 porções",
     "ingredientes": [
@@ -96,7 +96,7 @@
       "Montagem da feijoada: Refogue alho e cebola. Junte todas as carnes e embutidos. Acrescente o feijão cozido e um pouco da água do cozimento das carnes. Tempere com louro, pimenta-do-reino e ajuste o sal. Cozinhe por 30–40 minutos até engrossar.",
       "Finalização: Ajuste o tempero e, se necessário, amasse um pouco do feijão para engrossar."
     ],
-    "midiaPreparo": "IMG/feijoada-gif.mp4",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/feijoada-gif.mp4",
     "tipoMidiaPreparo": "video",
     "destaque": false
   },
@@ -104,7 +104,7 @@
     "id": "moqueca-peixe",
     "nome": "Moqueca de Peixe",
     "categoria": "Brasileira",
-    "imagem": "IMG/Moqueca.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/moqueca.jpg",
     "tempo": "45 min",
     "porcoes": "4 porções",
     "ingredientes": [
@@ -130,7 +130,7 @@
       "Montar a Moqueca: Em uma panela de barro ou comum, aqueça o azeite de oliva e doure levemente o alho. Faça camadas alternadas de cebola, pimentões, tomate e peixe. Regue com o leite de coco e o azeite de dendê. Tampe e cozinhe em fogo baixo por 20-25 minutos, sem mexer muito.",
       "Finalização: Antes de servir, salpique coentro fresco e, se quiser, pimenta dedo-de-moça picada. Ajuste o sal se necessário."
     ],
-    "midiaPreparo": "IMG/moqueca-gif.mp4",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/moqueca-gif.mp4",
     "tipoMidiaPreparo": "video",
     "destaque": false
   },
@@ -138,7 +138,7 @@
     "id": "pao-de-queijo",
     "nome": "Pão de Queijo Mineiro",
     "categoria": "Brasileira",
-    "imagem": "IMG/Pão de queijo.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/pao-de-queijo.jpg",
     "tempo": "25 min",
     "porcoes": "20 unidades",
     "ingredientes": [
@@ -157,7 +157,7 @@
       "Modele: as bolinhas e coloque na assadeira.",
       "Asse: por cerca de 25 minutos ou até dourar."
     ],
-    "midiaPreparo": "IMG/Pão de Queijo.gif",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/pao-de-queijo.gif",
     "tipoMidiaPreparo": "gif",
     "destaque": true
   },
@@ -165,7 +165,7 @@
     "id": "lasanha-bolonhesa",
     "nome": "Lasanha à Bolonhesa",
     "categoria": "Italiana",
-    "imagem": "IMG/Lasanha.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/lasanha.jpg",
     "tempo": "1h",
     "porcoes": "6 porções",
     "ingredientes": [
@@ -192,7 +192,7 @@
       "Montagem da lasanha: Em um refratário, coloque uma fina camada de molho bolonhesa. Faça a sequência: massa + ragu + bechamel + muçarela. Repita as camadas até acabarem os ingredientes. Finalize com molho bechamel e parmesão ralado por cima.",
       "Assar: Leve ao forno preaquecido a 200°C por 30–40 minutos, até borbulhar e gratinar por cima. Deixe descansar por 5–10 minutos antes de servir."
     ],
-    "midiaPreparo": "IMG/gif-lasanha.gif",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/gif-lasanha.gif",
     "tipoMidiaPreparo": "gif",
     "destaque": false
   },
@@ -200,7 +200,7 @@
     "id": "pizza-margherita",
     "nome": "Pizza Margherita Artesanal",
     "categoria": "Italiana",
-    "imagem": "IMG/Pizza.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/pizza.jpg",
     "tempo": "1h30",
     "porcoes": "2 pizzas",
     "ingredientes": [
@@ -224,7 +224,7 @@
       "Molho de tomate caseiro: Refogue o alho no azeite até dourar. Adicione os tomates picados (ou os pelados amassados). Cozinhe por 15–20 minutos até o molho reduzir. Tempere com sal e, se quiser, adicione folhas de manjericão. Bata no liquidificador se preferir um molho mais liso (opcional).",
       "Montagem e finalização: Preaqueça o forno a 250 °C (ou o máximo que seu forno permitir). Divida a massa em duas partes, abra em formato de disco (espessura média ou fina). Coloque a massa em uma assadeira untada ou pedra de pizza. Espalhe o molho, adicione a mussarela de búfala e finalize com folhas de manjericão. Regue com um fio de azeite. Asse por 10 a 15 minutos, ou até a borda dourar e o queijo borbulhar."
     ],
-    "midiaPreparo": "IMG/gif-pizza.gif",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/gif-pizza.gif",
     "tipoMidiaPreparo": "gif",
     "destaque": false
   },
@@ -232,7 +232,7 @@
     "id": "risoto-cogumelos",
     "nome": "Risoto de Cogumelos",
     "categoria": "Italiana",
-    "imagem": "IMG/Risoto.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/risoto.jpg",
     "tempo": "40 min",
     "porcoes": "4 porções",
     "ingredientes": [
@@ -266,7 +266,7 @@
     "id": "tiramisu",
     "nome": "Tiramisù",
     "categoria": "Italiana",
-    "imagem": "IMG/Tiramisu.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/tiramisu.jpg",
     "tempo": "3h (com geladeira)",
     "porcoes": "6 porções",
     "ingredientes": [
@@ -293,7 +293,7 @@
     "id": "arancini-de-queijo",
     "nome": "Arancini de Queijo",
     "categoria": "Italiana",
-    "imagem": "IMG/Arancini.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/arancini.jpg",
     "tempo": "1h15",
     "porcoes": "20 unidades",
     "ingredientes": [
@@ -318,7 +318,7 @@
       "Frite: Aqueça bem o óleo e frite os arancini até ficarem dourados e crocantes.",
       "Sirva: Escorra em papel-toalha. Espere esfriar."
     ],
-    "midiaPreparo": "IMG/arancini.mp4",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/arancini.mp4",
     "tipoMidiaPreparo": "video",
     "destaque": true
   },
@@ -326,7 +326,7 @@
     "id": "falafel-assado",
     "nome": "Falafel Assado",
     "categoria": "Mediterranea",
-    "imagem": "IMG/Falafel.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/falafel.jpg",
     "tempo": "1h",
     "porcoes": "4 porções",
     "ingredientes": [
@@ -352,7 +352,7 @@
       "Asse: Forno a 200°C por 20-25 min, virando na metade.",
       "Sirva: Com molho de tahine, homus ou em sanduíches de pão sírio."
     ],
-    "midiaPreparo": "IMG/falafel-gif.mp4",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/falafel-gif.mp4",
     "tipoMidiaPreparo": "video",
     "destaque": true
   },
@@ -360,7 +360,7 @@
     "id": "frango-grelhado",
     "nome": "Frango Grelhado com Ervas e Limão",
     "categoria": "Mediterranea",
-    "imagem": "IMG/Frango grelhado.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/frango-grelhado.jpg",
     "tempo": "30 min",
     "porcoes": "4 porções",
     "ingredientes": [
@@ -381,7 +381,7 @@
       "Grelhe o frango: Coloque os filés e grelhe por cerca de 5 a 7 minutos de cada lado, ou até que fiquem bem dourados e cozidos por dentro.",
       "Sirva: Retire do fogo, deixe descansar por 2 minutos e sirva com fatias de limão, salada ou legumes grelhados."
     ],
-    "midiaPreparo": "IMG/frango-grelhado-gif.mp4",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/frango-grelhado-gif.mp4",
     "tipoMidiaPreparo": "video",
     "destaque": false
   },
@@ -414,7 +414,7 @@
       "Prepare o Pão Pita: Em uma tigela, misture a farinha, o sal, o açúcar e o fermento. Adicione a água morna e o azeite, e misture até formar uma massa. Sove por cerca de 10 minutos, até ficar lisa e elástica. Cubra e deixe descansar por 1 hora, ou até dobrar de volume. Divida a massa em bolinhas e abra discos de cerca de 0,5 cm de espessura. Aqueça uma frigideira ou assadeira bem quente e asse cada disco por 1 a 2 minutos de cada lado, até inflar e dourar.",
       "Sirva: Sirva o hummus em um prato fundo, regado com azeite e acompanhado de pão pita quentinho."
     ],
-    "midiaPreparo": "IMG/hummus-gif.mp4",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/hummus-gif.mp4",
     "tipoMidiaPreparo": "video",
     "destaque": false
   },
@@ -422,7 +422,7 @@
     "id": "moussaka-grega",
     "nome": "Moussaka Grega",
     "categoria": "Mediterranea",
-    "imagem": "IMG/Moussaka.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/moussaka.jpg",
     "tempo": "1h20",
     "porcoes": "6 porções",
     "ingredientes": [
@@ -454,7 +454,7 @@
       "Asse: Leve ao forno preaquecido a 180°C por cerca de 30 a 40 minutos, até dourar.",
       "Sirva: Espere descansar por 10 minutos antes de cortar para firmar melhor."
     ],
-    "midiaPreparo": "IMG/Moussaka.gif",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/moussaka.gif",
     "tipoMidiaPreparo": "gif",
     "destaque": false
   },
@@ -462,7 +462,7 @@
     "id": "tabule-libanes",
     "nome": "Tabule Libanês",
     "categoria": "Mediterranea",
-    "imagem": "IMG/Tabule.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/tabule.jpg",
     "tempo": "30 min",
     "porcoes": "4 porções",
     "ingredientes": [
@@ -484,7 +484,7 @@
       "Tempere: Adicione o suco de limão, o azeite, o sal e a pimenta-do-reino. Misture bem.",
       "Sirva: Leve à geladeira por pelo menos 30 minutos antes de servir. Sirva gelado ou em temperatura ambiente, acompanhado de folhas de alface ou pão sírio."
     ],
-    "midiaPreparo": "IMG/Tabule.gif",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/tabule.gif",
     "tipoMidiaPreparo": "gif",
     "destaque": false
   },
@@ -492,7 +492,7 @@
     "id": "frango-xadrez",
     "nome": "Frango Xadrez",
     "categoria": "Oriental",
-    "imagem": "IMG/Frango Xadrez.gif",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/frango-xadrez.gif",
     "tempo": "35 min",
     "porcoes": "4 porções",
     "ingredientes": [
@@ -522,7 +522,7 @@
       "Cozinhar Molho: Cozinhe, mexendo constantemente, até formar um molho espesso.",
       "Finalizar: Coloque em uma travessa, polvilhe com amendoim e sirva quente."
     ],
-    "midiaPreparo": "IMG/Frango Xadrez.gif",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/frango-xadrez.gif",
     "tipoMidiaPreparo": "gif",
     "destaque": false
   },
@@ -530,7 +530,7 @@
     "id": "gyoza",
     "nome": "Gyoza (Pastelzinho Japonês)",
     "categoria": "Oriental",
-    "imagem": "IMG/Gyoza.png",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/gyoza.png",
     "tempo": "1h",
     "porcoes": "30 unidades",
     "ingredientes": [
@@ -557,7 +557,7 @@
     "id": "pad-thai-tradicional",
     "nome": "Pad Thai Tradicional",
     "categoria": "Oriental",
-    "imagem": "IMG/pad-thai.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/pad-thai.jpg",
     "tempo": "40 min",
     "porcoes": "4 porções",
     "ingredientes": [
@@ -585,7 +585,7 @@
       "Finalização: Finalize com a cebolinha e o amendoim triturado.",
       "Sirva: Sirva com gominhos de limão ao lado e mais amendoim por cima."
     ],
-    "midiaPreparo": "IMG/pad-thai-gif.mp4",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/pad-thai-gif.mp4",
     "tipoMidiaPreparo": "video",
     "destaque": true
   },
@@ -593,7 +593,7 @@
     "id": "sushi-salmao",
     "nome": "Sushi de Salmão",
     "categoria": "Oriental",
-    "imagem": "IMG/SushiSalmao.jpg",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/sushisalmao.jpg",
     "tempo": "1h",
     "porcoes": "20 unidades",
     "ingredientes": [
@@ -614,7 +614,7 @@
       "Adição do Recheio e Enrolar: Coloque a tira de salmão no meio, enrole a alga e espere 1 minuto.",
       "Corte e Servir: Após passar o minuto, com a faca bem afiada, corte em rodelas para servir."
     ],
-    "midiaPreparo": "IMG/sushi-gif.mp4",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/sushi-gif.mp4",
     "tipoMidiaPreparo": "video",
     "destaque": false
   },
@@ -622,7 +622,7 @@
     "id": "yakissoba",
     "nome": "Yakissoba de Legumes",
     "categoria": "Oriental",
-    "imagem": "IMG/Yakissoba.png",
+    "imagem": "https://ik.imagekit.io/alm845a8y/giro-culinario/yakissoba.png",
     "tempo": "45 min",
     "porcoes": "4 porções",
     "ingredientes": [
@@ -646,7 +646,7 @@
       "Refogue: Mexa todos os ingredientes até que fiquem cozidos, mas firmes.",
       "Sirva: Sirva a seguir."
     ],
-    "midiaPreparo": "IMG/yakissoba-gif.mp4",
+    "midiaPreparo": "https://ik.imagekit.io/alm845a8y/giro-culinario/yakissoba-gif.mp4",
     "tipoMidiaPreparo": "video",
     "destaque": false
   }
