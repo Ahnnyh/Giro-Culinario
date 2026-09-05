@@ -1788,7 +1788,7 @@ section h3::after {
   position: relative;
   background-color: transparent;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                   url('https: //ik .imagekit .io/alm 845a 8y /giro culinario/global.png');
+    url('https://ik.imagekit.io/alm845a8y/giro-culinario/global.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2315,7 +2315,7 @@ section h3::after {
 /* ===== ADICIONAR RECEITA (fundo global) ===== */
 .container-adicionar-receita {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                    url('https://ik.imagekit.io/alm845a8y/giro-culinario/global.png');
+    url('https://ik.imagekit.io/alm845a8y/giro-culinario/global.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
