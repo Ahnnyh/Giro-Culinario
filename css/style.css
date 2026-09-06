@@ -2431,4 +2431,172 @@ section h3::after {
   }
 }
 
+/* ===== BANNER, FILTROS E PAGINAÇÃO DAS PÁGINAS DE CATEGORIA ===== */
+.categoria-banner {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.categoria-banner h1 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.categoria-banner p {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.filtros-container {
+    background-color: #f9f5f0;
+    padding: 30px 0;
+    margin-bottom: 40px;
+    border-top: 1px solid #e0d6c9;
+    border-bottom: 1px solid #e0d6c9;
+}
+
+.filtros-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.filtro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filtro label {
+    font-weight: 600;
+    color: #5c3e1b;
+}
+
+.filtro select {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #d0c0a8;
+    background-color: white;
+    color: #5c3e1b;
+    font-size: 1rem;
+    min-width: 150px;
+    box-sizing: border-box;
+}
+
+.receitas-categoria {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.receitas-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.receitas-header h2 {
+    font-size: 2.5rem;
+    color: #5c3e1b;
+    margin-bottom: 10px;
+}
+
+.contador-receitas {
+    color: #777;
+    font-size: 1.1rem;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.paginacao a {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #5c3e1b;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.paginacao a:hover {
+    background-color: #e0d6c9;
+}
+
+.paginacao .pagina-atual {
+    background-color: #5c3e1b;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .categoria-banner {
+        height: 260px;
+        margin-bottom: 30px;
+    }
+
+    .categoria-banner h1 {
+        font-size: 2rem;
+    }
+
+    .categoria-banner p {
+        font-size: 1rem;
+    }
+
+    .filtros-content {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 15px;
+    }
+
+    .filtro {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .filtro select {
+        width: 100%;
+    }
+
+    #aplicar-filtros {
+        width: 100%;
+    }
+
+    .receitas-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .receitas-categoria {
+        padding: 0 10px;
+    }
+}
+
 /* ======= FIM style.css ======= */
