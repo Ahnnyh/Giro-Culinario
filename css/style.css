@@ -2433,7 +2433,7 @@ section h3::after {
 
 /* ===== BANNER, FILTROS E PAGINAÇÃO DAS PÁGINAS DE CATEGORIA ===== */
 .categoria-banner {
-    height: 400px;
+    height: 220px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -2441,7 +2441,7 @@ section h3::after {
     justify-content: center;
     text-align: center;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .banner-content {
@@ -2452,14 +2452,14 @@ section h3::after {
 }
 
 .categoria-banner h1 {
-    font-size: 4rem;
+    font-size: 2.6rem;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
 
 .categoria-banner p {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     color: white;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
@@ -2558,16 +2558,16 @@ section h3::after {
 
 @media (max-width: 768px) {
     .categoria-banner {
-        height: 260px;
-        margin-bottom: 30px;
+        height: 170px;
+        margin-bottom: 25px;
     }
 
     .categoria-banner h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .categoria-banner p {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .filtros-content {
